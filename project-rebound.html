@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="img/landingPageImgs/favicon-Emma.svg" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+
+  <script defer src="js/script.js"></script>
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <title>Emma Wang - Visual & UX Designer</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-box">
+      <a href="index.html">
+        <img class="logo" alt="emma-wang-logo" src="img/landingPageImgs/emmawang-Logo.svg" />
+      </a>
+      <nav class="main-nav">
+        <input type="checkbox" />
+        <img src="img/landingPageImgs/menu-outline.svg" class="button open" />
+        <img src="img/landingPageImgs/close-outline.svg" class="button close" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fun.html">Fun</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="page">
+    <!-- Hero Img -->
+    <img class="full-width-img margin-top" alt="project rebound showcase"
+      src="img/projectReboundPage/2x-PR-top-img.jpg" />
+
+    <!-- Project Rebound Brief -->
+    <section class="margin-bottom-gap-96 projects-grid--2-cols">
+      <div class="project-intro">
+        <div>
+          <h2 class="heading-secondary-projects ">Project</h2>
+          <p class="general-paragraph">Non-profit organization</p>
+          <h2 class="heading-secondary-projects">Duration</h2>
+          <p class="general-paragraph">35 weeks, Aug - May 23 2023</p>
+          <h2 class="heading-secondary-projects">Role</h2>
+          <p class="general-paragraph">UI&UX Designer</p>
+        </div>
+        <div>
+          <h2 class="heading-secondary-projects">Team</h2>
+          <p class="general-paragraph-sub">Aakash Gautam (Lead)</p>
+          <p class="general-paragraph-sub">Khushboo Gandhi (Engineer)</p>
+          <p class="general-paragraph-sub">Alekya Bairaboina (Engineer)</p>
+          <p class="general-paragraph-sub">Arianna Yuan (Assistant)</p>
+          <p class="general-paragraph-sub">Wen Hao Li (Assistant)</p>
+          <p class="general-paragraph">Gebriel Gidey (Assistant)</p>
+          <h2 class="heading-secondary-projects">Tool</h2>
+          <p class="general-paragraph">Figma/Miro</p>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <h2 class="heading-secondary-projects">Project Rebound Brief</h2>
+          <p class="general-paragraph">Project Rebound is a program that supports the higher education and successful
+            reintegration of formerly incarcerated individuals wishing to enroll and succeed at the California State
+            University.</p>
+
+          <p class="general-paragraph">I was a part of Aakash's lab at SFSU, where I collaborated with team members on
+            supporting digital literacy for returning citizens. Our work involved conducting <a class="highlight"
+              href="#research-section">user research</a>, <a class="highlight"
+              href="#defining-problems-section">defining problems</a>,
+            <a class="highlight" href="#creating-wireframes-section">creating wireframes</a>, <a class="highlight"
+              href="#high-fidelity-section">developing high-fidelity
+              versions</a>, and <a class="highlight" href="#usability-test-section">conducting usability
+              tests</a>.These activities aimed to ensure that the solutions we designed effectively addressed the
+            population's specific needs and challenges.</p>
+
+          <p class="general-paragraph">I had an amazing time working with my teammates as we conducted interviews with
+            people from Project Rebound, including both staff and students to gain a deep understanding of the
+            challenges that they face. </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Rebound Context -->
+    <section class="margin-bottom-gap-96 projects-grid--2-cols">
+      <div>
+        <h2 class="heading-secondary-projects">
+          📌 Context
+        </h2>
+      </div>
+      <div>
+        <h3>
+          Why is this important
+        </h3>
+        <p class="general-paragraph">
+          Each year, thousands of individuals are released from prisons, but they face higher unemployment rates
+          compared to the national average (ASPE).
+        </p>
+        <p class="general-paragraph">
+          Limited digital literacy due to resource constraints poses a challenge for formerly incarcerated citizens in
+          today's job market. When starting college, they encounter difficulties with technical terminology,
+          accountability, assignments, and seeking assistance. They also face vulnerabilities to online scams.
+          Insufficient support leads to low retention rates and employment struggles, hindering their successful
+          integration into society.
+        </p>
+
+        <h3 class="padding-gap-top-24">
+          Challenge
+        </h3>
+        <p class="general-paragraph">When people can't articulate the problem they are having, how will they search?
+          And how can we support them to ask for help?
+        </p>
+      </div>
+    </section>
+
+    <!-- Project Research -->
+    <section id="research-section">
+      <div class="margin-bottom-gap-24 projects-grid--2-cols">
+        <div>
+          <h2 class="heading-secondary-projects">
+            🔎 Research
+          </h2>
+        </div>
+
+        <div>
+          <h3>Research Method</h3>
+          <p class="general-paragraph">
+            Used qualitative method - interviews to gauge a better understanding of how we could support students in
+            asking for help regarding technological issues.
+          </p>
+
+          <h4 class="heading-quaternary">
+            Conducted interviews with Project Rebound students
+          </h4>
+          <p class="paragraph-quaternary">
+            At an early stage, Aakash, Khushboo, and I interviewed 6 Project Rebound students to directly gather the
+            students' perspectives, understanding their challenges, and identify needs when it comes to technological
+            issues.
+          </p>
+
+
+          <h4 class="heading-quaternary">
+            Conducted interviews with Project Rebound staff members
+          </h4>
+          <p class="paragraph-quaternary">
+            We conducted individual interviews with three Project Rebound staff members to gain insights into their
+            perspectives on supporting students in the program. Their experience working with students provided valuable
+            knowledge about the challenges students face and the areas where they require support.
+          </p>
+
+
+          <h3 class="padding-gap-top-24">Research Goal</h3>
+          <p class="general-paragraph">
+            The primary goal of this study is to investigate Project Rebound students' use of technology and identify
+            potential areas for improvement and support.
+          </p>
+
+
+
+          <h3 class="padding-gap-top-24">Analyzing Data - Interview Main Takeaways</h3>
+          <p class="general-paragraph">
+            Following the interviews, we analyzed the interview transcripts to extract important information. From
+            the
+            summaries, we identified codes that formed the basis of our affinity diagram in Miro. By combining these
+            codes, we gathered data to group common findings. These groups were further organized to reveal
+            relationships such as dependencies and sequences, enabling us to identify themes.
+          </p>
+
+
+          <div class="grid--2-col-half-auto-gap">
+            <div>
+              <h4 class="heading-quaternary">
+                Limited Resources
+              </h4>
+              <div>
+                <p class="paragraph-quaternary">
+                  Project Rebound students face significant challenges due to financial constraints and limited
+                  resources.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="heading-quaternary">
+                Support from Project Rebound Staff
+              </h4>
+              <div>
+                <p class="paragraph-quaternary">
+                  Project Rebound staff invest tremendous effort in assisting students when students need help.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h4 class="heading-quaternary">
+                Different tech comfort levels
+              </h4>
+              <div>
+                <p class="paragraph-quaternary">
+                  Project Rebound students vary in tech comfort. Some struggle with technical terms and expressing
+                  issues.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h4 class="heading-quaternary">
+                Student Potential and Aspirations
+              </h4>
+              <div>
+                <p class="paragraph-quaternary">
+                  Project Rebound students have skills, and they want to make a positive impact on the community.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <img class="full-width-img" alt="interview findings" src="img/projectReboundPage/2x-InterviewFinding.jpg" />
+    </div>
+
+    <!-- Storyboards -->
+    <section>
+      <div class="margin-bottom-gap-96 projects-grid--2-cols">
+        <div>
+          <h2 class="heading-secondary-projects">
+            ✍️ Storyboards
+          </h2>
+        </div>
+
+        <div>
+          <h3>Visual Narratives The Pain Points</h3>
+          <p class="general-paragraph">
+            After completing our research, I created a storyboard that illustrates the user's pain points as below.
+          </p>
+          <h4 class="heading-quaternary">Scenario One</h4>
+          <img class="block-scenario-img" alt="storyboard" src="img/projectReboundPage/2x-ScenarioOne.jpg" />
+
+          <h4 class="heading-quaternary">
+            Scenario Two
+          </h4>
+          <img class="block-scenario-img" alt="storyboard" src="img/projectReboundPage/2x-ScenarioTwo.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Defining Problems -->
+    <section id="defining-problems-section">
+      <div class="margin-bottom-gap-24">
+        <div class=" projects-grid--2-cols">
+          <div>
+            <h2 class="heading-secondary-projects">
+              ⚡️ Problem Identification
+            </h2>
+          </div>
+
+          <div>
+            <h3>Problem Diagnosis</h3>
+            <p class="general-paragraph">
+              Based on the research, we identified four key design challenges to address.
+            </p>
+
+
+            <div class="grid--2-col-half-auto-gap">
+              <div>
+                <h4 class="heading-quaternary">
+                  Problem Articulation
+                </h4>
+                <p class="paragraph-quaternary">
+                  How can we assist students who face difficulties in articulating their problems?
+                </p>
+              </div>
+
+              <div>
+                <h4 class="heading-quaternary">
+                  Different Technology Comfort Levels
+                </h4>
+                <p class="paragraph-quaternary">
+                  How can resources accommodate the diverse needs of different students?
+                </p>
+              </div>
+
+              <div>
+                <h4 class="heading-quaternary">
+                  Technological Terminology
+                </h4>
+                <p class="paragraph-quaternary">
+                  How can we address the issue of unfamiliar technical jargons faced by students?
+                </p>
+              </div>
+
+              <div>
+                <h4 class="heading-quaternary">
+                  Staff Availability and Support
+                </h4>
+                <p class="paragraph-quaternary">
+                  What are the options for supporting students when staff members are not available?
+                </p>
+              </div>
+            </div>
+
+
+            <h3 class="padding-gap-top-24">Spectrums And Situations Framework</h3>
+            <p class="general-paragraph">
+              We brainstormed the potential concepts, and later I organized them into a framework for analysis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img class="full-width-img-24" alt="brainstorm"
+          src="img/projectReboundPage/4x-ProjectRebound-brianstorming.jpg" />
+      </div>
+
+    </section>
+
+    <!-- Define -->
+    <section>
+      <div class=" projects-grid--2-cols">
+        <div>
+          <h2 class="heading-secondary-projects">
+          </h2>
+        </div>
+
+        <div>
+          <h3>Tackle The Problems</h3>
+          <p class="general-paragraph">
+            During the process, it's crucial to remember that we are not the users. Drawing from the ideations
+            section, I outlined the situations and proposed strategies to address each problem.
+          </p>
+          <div>
+            <img class="block-img-small-gap" alt="problem breakdown"
+              src="img/projectReboundPage/2x-situation-tackle.jpg" />
+          </div>
+          <p class="general-paragraph">The ideas are designed to assist users in various situations and
+            are interconnected. By giving students chances to learn technical skills and understand tech terms, we
+            empower them to better express their problems. This approach ensures that users not only gain knowledge
+            but also learn how to communicate their challenges.</p>
+
+          <div>
+            <h3 class="padding-gap-top-24 ">Visual Narrative</h3>
+            <p class="general-paragraph">
+              I created a storyboard that illustrates how the website can help Project Rebound students.
+            </p>
+            <div>
+              <img class="block-img-big-gap" alt="storyboard" src="img/projectReboundPage/2x-ScenarioThree.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IA & Wireframing -->
+    <section id="creating-wireframes-section">
+      <div>
+        <div class="margin-bottom-gap-24 projects-grid--2-cols">
+          <div>
+            <h2 class="heading-secondary-projects">
+              💫 IA & Wireframing
+            </h2>
+          </div>
+
+          <div>
+            <h3>Information Architecture</h3>
+            <p class="general-paragraph">
+              I created a simple information architecture to arrange information in a way that makes it
+              understandable for later use in wireframes.
+            </p>
+            <div>
+              <img class="block-img-small-gap" alt="information architecture"
+                src="img/projectReboundPage/2x-InformationArchitecture.jpg" />
+            </div>
+
+            <div>
+              <h3>Low-Fi Wireframes</h3>
+              <p class="general-paragraph">
+                After our team collaborated to identify and discuss the core pages and functionalities that needed
+                to be included.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="full-width-img" alt="wireframe" src="img/projectReboundPage/2x-Low-Fi Wireframes.jpg" />
+    </section>
+
+    <!-- Design -->
+    <section id="high-fidelity-section">
+      <div>
+        <div class="margin-bottom-gap-24 projects-grid--2-cols">
+          <div>
+            <h2 class="heading-secondary-projects">
+              🎨 Design
+            </h2>
+          </div>
+
+          <div>
+            <h3>Creating High-fidelity Version</h3>
+            <p class="general-paragraph">
+              After finalizing the wireframe, I used Figma proceeded to develop high-fidelity version,
+              incorporating UI designs that align with colors, typeface, and other design elements. Based on the
+              design system to create a cohesive and visually appealing user interface.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img class="full-width-img" alt="hi-fi" src="img/projectReboundPage/2x-hifi.jpg" />
+      </div>
+    </section>
+
+    <!-- Usability Tests -->
+    <section id="usability-test-section">
+      <div class=" projects-grid--2-cols">
+        <div>
+          <h2 class="heading-secondary-projects">
+            ⭐️ Usability Tests
+          </h2>
+        </div>
+
+        <div>
+          <h3>Evaluations</h3>
+          <p class="general-paragraph">
+            To assess the effectiveness and usability of the design, we conducted usability
+            testing, gathering valuable feedback and insights.
+          </p>
+          <div class="grid--2-col-half-auto-gap">
+            <div>
+              <h4 class="heading-quaternary">
+                Internal Test
+              </h4>
+              <p class="paragraph-quaternary">
+                Internal critiques for initial feedback using Nielsen Norman Group's 10 Usability Heuristics for
+                User Interface Design as guidelines.
+              </p>
+            </div>
+            <div>
+              <h4 class="heading-quaternary">
+                User Testing: Feedback Collection
+              </h4>
+              <p class="margin-bottom-gap-24 paragraph-quaternary">
+                We tested the website in real-world scenarios with a full walkthrough and gathered feedback from
+                Project Rebound users.
+              </p>
+            </div>
+          </div>
+
+          <h3>Areas for Improvement</h3>
+          <p class="general-paragraph">
+            With the final test, participants had a positive impression of the prototypes overall. However,
+            three
+            major areas were identified for improvement based on their feedback.
+          </p>
+
+          <h4 class="heading-quaternary">
+            Add “Common Words”
+          </h4>
+          <p class="paragraph-quaternary">
+            Users suggested adding "Common Words" to make the feature more useful.
+          </p>
+        </div>
+    </section>
+
+    <div class="padding-gap-top-24 grid--3-cols-small-gap">
+      <img src="img/projectReboundPage/1x-before-add-common-words.jpg" class="block-img-small-gap"
+        alt="before" />
+
+      <img src="img/patternAwarenessPage/arrow-vector.svg" class="showCase-img" alt="arrow" />
+
+      <img src="img/projectReboundPage/1x-after-add-common-words.png" class="block-img-small-gap"
+        alt="after" />
+    </div>
+
+    <section>
+      <div class=" projects-grid--2-cols">
+        <div>
+          <h2 class="heading-secondary-projects">
+          </h2>
+        </div>
+        <div>
+          <h4 class="heading-quaternary">
+            Create a Dropdown Navigation Bar
+          </h4>
+          <p class="paragraph-quaternary">
+            To enhance navigation, we replaced the navigation bar with a dropdown menu, improving accessibility and
+            making it easier for users to find and access the homepage and sub-pages.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="padding-gap-top-24 grid--3-cols-small-gap">
+      <img src="img/projectReboundPage/1x-create-dropdown.jpg" class="block-img-small-gap" alt="before" />
+
+      <img src="img/projectReboundPage/arrow-vector2.svg" class="showCase-img" alt="arrow" />
+
+      <img src="img/projectReboundPage/created-dropdown.gif" class="block-img-small-gap" alt="after" />
+    </div>
+
+    <section>
+      <div class=" projects-grid--2-cols">
+        <div>
+          <h2 class="heading-secondary-projects">
+          </h2>
+        </div>
+        <div>
+          <h4 class="heading-quaternary">
+            Adding Progress Indicators
+          </h4>
+          <p class="paragraph-quaternary">
+            Enhance test navigation by adding progress indicators and question navigation buttons. Users can track their
+            progress and easily move between questions.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="padding-gap-top-24 grid--3-cols-small-gap">
+      <img src="img/projectReboundPage/1x-before-adding-progress-indicators.jpg" class="block-img-big-gap "
+        alt="before" />
+
+      <img src="img/projectReboundPage/arrow-vector3.svg" class="showCase-img" alt="arrow" />
+
+      <img src="img/projectReboundPage/1x-after-adding-progress-indicators.jpg" class="block-img-big-gap"
+        alt="after" />
+    </div>
+
+
+    <!-- Reflection -->
+    <section>
+      <div class=" projects-grid--2-cols">
+        <div>
+          <h2 class="heading-secondary-projects">
+            ✨ Reflection
+          </h2>
+        </div>
+        <div>
+          <h3>Outcome Discussion</h3>
+          <p class="general-paragraph">
+            In today's fast-changing job market, having basic digital skills is vital, especially for those rejoining
+            society after incarceration. Our project aims to close the digital gap and provide essential support to each
+            Project Rebound student, helping them acquire crucial digital skills.
+          </p>
+          <h3 class="padding-gap-top-24">Empathize With User</h3>
+          <p class="general-paragraph">
+            Empathy with the user is a fundamental principle for UX designers. It is especially important in this
+            project, as the user group has unique needs and challenges. To create a tool that assists them, it is
+            essential to be a good listener and observer, deeply connecting with their pains and difficulties.
+          </p>
+
+          <h3 class="padding-gap-top-24">Insights That Informed Design Decisions</h3>
+          <p class="general-paragraph">
+            Insights are not a one-time affair, they continue to hold value throughout the design process. They act as a
+            guiding compass, ensuring we stay on the right track. Regular reflection on these insights is crucial to
+            assess whether the design effectively addresses the identified problems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="grid--3-cols-footer">
+        <div>
+          <p class="footer-title">
+            Thanks for stopping by ❤️ </p>
+          <p class="footer-sub">
+            Copyright &copy; <span class="year">2030</span> by Emma Wang
+          </p>
+        </div>
+
+        <div>
+          <p class="footer-title">
+            Get in touch 📧 </p>
+            <a class="footer-link footer-sub" href="mailto:Emmawang8989@gmail.com" >Emmawang8989@gmail.com</a>
+        </div>
+
+        <div>
+          <p class="footer-title">
+            Stay connected 👋 </p>
+          <a class="footer-link footer-sub" href="https://www.linkedin.com/in/emmawangdesign/"
+            target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+
+</html>
+

@@ -1,110 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Emma Wang, UX Design Student</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <meta name="description"
-          content="I am a UX Design student building digital products for web and mobile.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="img/landingPageImgs/favicon-Emma.svg" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css?v=1" />
+  <script defer src="js/script.js"></script>
+  <title>Emma Wang - Visual & UX Designer</title>
 </head>
+
 <body>
-<nav>
-    <a href="/"><img class="large" src="/emma-drawing.svg" alt="A cute drawing of Emma"></a>
-    <div class="spacer"></div>
-    <ul>
-        <li class="selected"><a href="/">Home</a></li>
-        <li><a href="/about.html">About Me</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-    </ul>
-</nav>
-<main>
+  <header class="header">
+    <div class="header-box">
+      <a href="index.html">
+        <img class="logo" alt="emma-wang-logo" src="img/landingPageImgs/emmawang-Logo.svg" />
+      </a>
+      <nav class="main-nav">
+        <input type="checkbox" />
+        <img src="img/landingPageImgs/menu-outline.svg" class="button open" />
+        <img src="img/landingPageImgs/close-outline.svg" class="button close" />
+        <ul>
+          <li><a class="selected" href="index.html">Home</a></li>
+          <li><a href="fun.html">Fun</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="large-row" id="intro">
-        <div>
-            <div id="headshot" style="position:relative;">
-                <img src="emma-head.jpeg"
-                     alt="Photo of Emma smiling, standing outdoors in front of water and mountains"
-                     style="width: 100%">
-                <img src="emma-head-blue-circle.svg" alt="blue circle"
-                     style="width: 10.5%; position: absolute; top: 84%; left: -6%;">
-                <img src="emma-head-orange-circle.svg" alt="orange circle"
-                     style="width: 20%; position: absolute; top: 15%; left: 90%;">
-                <img src="emma-head-green-triangle.svg" alt="green triangle"
-                     style="width: 15%; position: absolute; top: 81%; left: 83%;">
+  <div id="page">
+    <div class="subTitle">Visual & UX Designer</div>
+
+    <section>
+      <!-- Project Rebound -->
+      <section class="section-box">
+        <a href="project-rebound.html" class="hover-link">
+          <div class="margin-bottom-gap-96 grid grid--2-cols">
+            <div>
+              <h2>Project Rebound</h2>
+              <span class="heading-secondary-subheading">Web App ｜ 2023</span>
+              <p class="hover-link">Collaborated with team members on supporting digital literacy for
+                returning citizens. </p>
             </div>
+
+            <div class="showCase-Img-box">
+              <img src="img/landingPageImgs/2x-ProjectReboundHome.jpg" class="showCase-img img-hover"
+                alt="project rebound mockup" />
+            </div>
+          </div>
+        </a>
+      </section>
+
+
+      <!-- NearBers -->
+      <section class="section-box">
+        <a href="nearbers.html" class="hover-link">
+          <div class="margin-bottom-gap-96 grid grid--2-cols">
+            <div>
+              <h2>NearBers</h2>
+              <span class="heading-secondary-subheading">Mobile App ｜ 2019</span>
+              <p class="hover-link">NearBers is social networking app designed specifically for connecting
+                people with their
+                neighbors in the
+                same building to create a supportive community. </p>
+            </div>
+
+            <div class="showCase-Img-box">
+              <img src="img/landingPageImgs/2x-NearBers.jpg" class="showCase-img img-hover" alt="nearbers mockup" />
+            </div>
+          </div>
+        </a>
+      </section>
+
+
+      <!-- Pattern Awareness -->
+      <section class="section-box">
+        <a href="pattern-awareness.html" class="hover-link">
+          <div class="grid grid--2-cols">
+            <div>
+              <h2>Pattern Awareness</h2>
+              <span class="heading-secondary-subheading">WebSite ｜ 2023</span>
+              <p class="hover-link">Pattern Awareness is my capstone project. It's a website dedicated to
+                raise
+                awareness
+                among people,
+                specifically design students, regarding the utilization of deceptive patterns in digital products.
+              </p>
+            </div>
+
+            <div class="showCase-Img-box">
+              <img src="img/landingPageImgs/patternAwareness.gif" class="showCase-img img-hover"
+                alt="pattern awareness mockup" />
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="grid--3-cols-footer">
+          <div>
+            <p class="footer-title">
+              Thanks for stopping by ❤️ </p>
+            <p class="footer-sub">
+              Copyright &copy; <span class="year">2030</span> by Emma Wang
+            </p>
+          </div>
+
+          <div>
+            <p class="footer-title">
+              Get in touch 📧 </p>
+              <a class="footer-link footer-sub" href="mailto:Emmawang8989@gmail.com" >Emmawang8989@gmail.com</a>
+          </div>
+
+          <div>
+            <p class="footer-title">
+              Stay connected 👋 </p>
+            <a class="footer-link footer-sub" href="https://www.linkedin.com/in/emmawangdesign/"
+              target="_blank">LinkedIn</a>
+          </div>
         </div>
-        <div class="spacer3 small"></div>
-        <div>
-            <h1>UX Design Student</h1>
-            <div class="spacer2"></div>
-            <h3>Hi, I am Emma Wang.</h3>
-            <div class="spacer3"></div>
-            <p>Hello! I am a UX Design student building digital products for web and mobile.</p>
-            <div class="spacer2"></div>
-            <a href="/about.html" class="button">About Me</a>
-        </div>
-    </section>
-
-    <div class="spacer1"></div>
-
-    <section id="work">
-        <h2>My Work</h2>
-
-        <div class="spacer1 large"></div>
-        <div class="spacer2 small"></div>
-
-        <div class="row drop-shadow">
-            <!-- Safari refuses to apply `flex:1` to the `img` tag, so we wrap it in a `div`.-->
-            <div class="large margin-left-right">
-                <img src="nearbers-three-screens.jpeg" alt="Nearbers app screens">
-            </div>
-            <div class="vertical-rule large"></div>
-            <div class="margin">
-                <h3>Nearbers</h3>
-                <div class="spacer2"></div>
-                <p>Nearbers is a social app that connects
-                    your neighbors living in the same building
-                    to create a supportive, friendly, and fun
-                    community.</p>
-                <div class="spacer2"></div>
-                <a href="/nearbers.html" class="outline-button">View Case Study</a>
-            </div>
-            <div class="small margin">
-                <img src="nearbers-login.png" alt="Nearbers app login screen">
-            </div>
-        </div>
-
-        <div class="spacer1 large"></div>
-        <div class="spacer3 small"></div>
-
-        <div class="row drop-shadow">
-            <div class="margin">
-                <h3>Homemade</h3>
-                <div class="spacer2"></div>
-                <p>Homemade is a mobile application offers homemade dishes, desserts, drinks, made by home chefs in your community.</p>
-                <div class="spacer2"></div>
-                <div class="outline-button disabled">Coming Soon</div>
-            </div>
-            <div class="vertical-rule large"></div>
-            <div class="large margin">
-                <img src="homemade-combined.jpeg"
-                     alt="Homemade app logo screen and login screen on phones">
-            </div>
-            <div class="small margin">
-                <img src="homemade-splash.png" alt="Homemade app splash screen">
-            </div>
-        </div>
-    </section>
-
-</main>
-<div class="spacer1 large"></div>
-<footer>
-    <div class="spacer3 small"></div>
-    <a href="mailto:emmawang.ux@gmail.com"><img src="/icon-envelope.svg" alt="envelope icon"></a>
-    <a href="https://www.linkedin.com/in/emma-wang-91847a223/"><img src="/icon-linkedin.svg" alt="LinkedIn icon"></a>
-</footer>
-<div class="spacer2 large"></div>
+      </footer>
+  </div>
 </body>
+
 </html>

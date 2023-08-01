@@ -1,311 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Nearbers - Emma Wang, UX Design Student</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="img/landingPageImgs/favicon-Emma.svg" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+  <script defer src="js/script.js"></script>
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <title>Emma Wang - Visual & UX Designer</title>
 </head>
+
 <body>
-<nav>
-    <a href="/"><img class="large" src="/emma-drawing.svg" alt="A cute drawing of Emma"></a>
-    <div class="spacer"></div>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About Me</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-    </ul>
-</nav>
-<main>
-    <div class="h1"><h1>Nearbers</h1></div>
-    <div class="spacer1"></div>
-    <img src="nearbers-four-screens.png"
-         alt="Nearbers app screens: postings, login, chats, and my account">
-    <div class="spacer1"></div>
-
-    <h2>Project Overview</h2>
-    <div class="spacer2"></div>
-    <h3>Background:</h3>
-    <p>
-        Nearbers is a social networking app.
-        Nearbers users can use the app to connect with their neighbors
-        who live in the same building or housing complex.
-        I want to build this app to narrow the distance between people and bring
-        people together to create helpful and friendly social connections.
-        I currently live in an apartment,
-        I wish for a way to contact and connect with my neighbors.
-    </p>
-    <div class="large-row">
-        <div class="large-padding-right">
-            <h3>Problem:</h3>
-            <ul>
-                <li>Have you ever felt far away from your neighbors even though you live in
-                    the same building?
-                <li>Have you ever deliberately avoided run-ins with your neighbors
-                    in the hallway, elevator, or stairs?
-                <li>Have you ever needed a neighbor's help,
-                    or needed information about a power outage or internet outage,
-                    but hesitated to knock on their door?
-                <li>Have you ever thought about giving away your unwanted items
-                    to people who need them?
-                <li>Have you ever wanted to connect with your neighbors, but didn't know how？
-                <li>New to a place and didn't know anyone?
-            </ul>
-            <h3>Solution:</h3>
-            <ul>
-                <li>Create a mobile application that can connects neighbors living
-                    in the same building to create a supportive, friendly, and fun community.
-            </ul>
-        </div>
-        <div class="large-padding-left">
-            <h3>Role:</h3>
-            <ul>
-                <li>UX/UI Designer (Visual Design, Interaction Design)
-            </ul>
-            <h3>Tools:</h3>
-            <ul>
-                <li>Figma, Adobe Illustrator, Adobe photoshop
-            </ul>
-            <h3>Methods:</h3>
-            <ul>
-                <li>User Research, Competitor Analysis, Branding, UI Design, Prototyping
-            </ul>
-            <h3>Timeframe:</h3>
-            <ul>
-                <li>4 weeks (100 hours)
-            </ul>
-        </div>
+  <header class="header">
+    <div class="header-box">
+      <a href="index.html">
+        <img class="logo" alt="emma-wang-logo" src="img/landingPageImgs/emmawang-Logo.svg" />
+      </a>
+      <nav class="main-nav">
+        <input type="checkbox" />
+        <img src="img/landingPageImgs/menu-outline.svg" class="button open" />
+        <img src="img/landingPageImgs/close-outline.svg" class="button close" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fun.html">Fun</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="spacer1"></div>
+  </header>
+  <div id="page">
+    <!-- Hero Img -->
+    <img class="full-width-img marginTop" alt="nearBers showcase" src="img/nearBersPage/2x-nearbers-heroImg.jpg" />
 
-    <h2>Research</h2>
-    <div class="spacer2"></div>
-    <div class="large-row">
-        <div class="large-padding-left">
-            <h3>Research Goals:</h3>
-            <ul>
-                <li>Understand the competitor landscape and what solutions currently exist
-                <li>Understand how users interact with their neighbors
-                <li>Find out what would keep a user interested in using this app
-                <li>Learn what accessibility features are included in current solutions
-                <li>What are people's expectations on platforms like Nearbers?
-            </ul>
+    <!-- NearBers Brief -->
+    <section class="margin-bottom-gap-96  projects-grid--2-cols">
+      <div class="project-intro">
+        <div>
+          <h2 class="heading-secondary-projects ">Project</h2>
+          <p class="general-paragraph">Speculative project</p>
+
+          <h2 class="heading-secondary-projects">Duration</h2>
+          <p class="general-paragraph">7 weeks, Aug - Sep 2019</p>
+
+          <h2 class="heading-secondary-projects">Role</h2>
+          <p class="general-paragraph">UI&UX Designer</p>
         </div>
-        <div class="large-padding-right">
-            <h3>Research methods:</h3>
-            <ul>
-                <li>Primary Research (User Survey, User Interviews)
-                <li>Secondary Research (Competitive Analysis)
-            </ul>
+        <div>
+          <h2 class="heading-secondary-projects">Team</h2>
+          <p class="general-paragraph">Solo</p>
+
+          <h2 class="heading-secondary-projects">Tool</h2>
+          <p class="general-paragraph">Figma/Adobe Suite</p>
         </div>
-    </div>
-    <div class="spacer1"></div>
+      </div>
 
-    <h2>Primary Research</h2>
-    <div class="spacer2"></div>
-    <h3>User Surveys:</h3>
-    <p>I canducted a user survey to determine if there is market for Nearbers.</p>
-    <ul>
-        <li>Through surveys, I found that only 10% of apartment dwellers know their
-            neighbors. 90% of potential users do not know their neighbors.
-        <li>10% of apartment dwellers don't want to connect with their neighbors,
-            20% choose maybe,
-            and the remaining 70% of people want to connect with their neighbors.
-    </ul>
-    <div class="spacer2"></div>
-    <div class="large-row">
-        <figure class="padding">
-            <img src="nearbers-survey-know.svg">
-            <figcaption>Know their neighbors</figcaption>
-        </figure>
-        <figure class="padding">
-            <img src="nearbers-survey-want.svg">
-            <figcaption>Want to know their neighbors</figcaption>
-        </figure>
-    </div>
-    <div class="spacer2"></div>
+      <div>
+        <div>
+          <h2 class="heading-secondary-projects">NearBers Brief</h2>
+          <p class="general-paragraph">NearBers is a social networking app designed specifically for connecting people
+            with their neighbors in the same apartment or condo complex. It was created during the COVID-19 lockdown to
+            address the challenge of limited neighbor connections. With NearBers, users can discover and interact with
+            their neighbors, participate in community events, and share information and resources.</p>
 
-    <h3>User Interviews:</h3>
-    <p>Key Insights:</p>
-    <ul>
-        <li>Users want to get acquainted with their neighbors, but they don’t know how.
-        <li>Users want to invite their neighbors to have brunch or drinks,
-            but they are hesitated to knock on their doors.
-        <li>Users have deliberately avoided running into their neighbors
-            in the elevator because they don’t want small talk at that time.
-        <li>Users want to share or give away some goods to neighbors who need them.
-            They usually put things in the building lobby
-            with a sign saying "Free! Please take."
-        <li>Users are in interested in an app that lets them connect with your neighbors.
-        <li>Sometimes a neighbor plays loud music late at night.
-            Users want a nice way to ask their neighbor to be quiet,
-            instead of pounding on the wall.
-    </ul>
-    <div class="spacer1"></div>
-
-    <h2>Secondary Research</h2>
-    <div class="spacer2"></div>
-    <h3>Competitor Analysis:</h3>
-    <div class="spacer3"></div>
-    <div class="large-row">
-        <div class="large-padding-left">
-            <div style="
-                max-width: 25rem;
-                font-size: 150%;
-                text-align: center;
-                padding: 2rem 0 2rem 0;
-                border-radius: 0.4rem;
-                color: #fff;
-                background: #8FD524;"
-            >NEXTDOOR
-            </div>
-            <div class="spacer3"></div>
-            <h3>PRO:</h3>
-            <ul>
-                <li>Easy to install and easy to use
-                <li>Convenient
-                <li>A big company
-                <li>Big user base
-            </ul>
-            <h3>CON:</h3>
-            <ul>
-                <li>Scale is too big
-                <li>Overwhelmed with posts
-                <li>Unreliable news
-
-            </ul>
+          <p class="general-paragraph">NearBers was my first UX project where I aimed to challenge myself and learn
+            through the process. I conducted <a class="highlight" href="#research-section">research</a>, <a
+              class="highlight" href="#define-problems-section">defined problems</a>, explored <a class="highlight"
+              href="#design-ideas-section">design ideas</a>, developed the <a class="highlight"
+              href="#brand-identity-section">brand identity</a>, and designed the </a>, developed the <a
+              class="highlight" href="#high-fidelity-version-section">high-fidelity version</a> of the
+            app. It was a good learning experience that allowed me to practice my skills.</p>
         </div>
-        <div class="large-padding-left">
-            <div style="
-                max-width: 25rem;
-                font-size: 150%;
-                text-align: center;
-                padding: 2rem 0 2rem 0;
-                border-radius: 0.4rem;
-                color: #EB958B;
-                background: #022843;"
-            >OneRoof
-            </div>
-            <div class="spacer3"></div>
-            <h3>PRO:</h3>
-            <ul>
-                <li>Smaller community
-                <li>Clean design
-                <li>Easy to navigate
-            </ul>
-            <h3>CON:</h3>
-            <ul>
-                <li>Relatively brand new
-                <li>Requires 6-digit building code to join
-            </ul>
-        </div>
-    </div>
-    <div class="spacer1"></div>
+      </div>
+    </section>
 
-    <h2>User Persona</h2>
-    <div class="spacer2"></div>
-    <img src="nearbers-persona.png" alt="Nearbers user persona">
-    <div class="spacer1"></div>
+    <!-- NearBers Context -->
+    <section class="margin-bottom-gap-96 projects-grid--2-cols">
+      <div>
+        <h2 class="heading-secondary-projects">
+          📌 Context
+        </h2>
+      </div>
+      <div>
+        <h3 class="heading-tertiary">
+          Why is this important
+        </h3>
+        <p class="general-paragraph">
+          Step into the bustling world of urban cities, where apartment life can be strangely isolating. In major
+          cities like London and New York, a significant percentage of residents—55% and 52% respectively—admit to
+          feeling lonely in their own urban environments, as revealed by a TimeOut City Index survey.
+        </p>
+        <p class="general-paragraph">
+          In fact, many of us don't even know the names of our neighbors, despite crossing paths with them day after
+          day. Living in the same community, we purposefully avoid chance encounters with our neighbors. Even within
+          the confined space of an elevator, our interactions are reduced to fleeting glances, leaving conversations
+          unspoken.
+        </p>
 
-    <h2>Product Goals</h2>
-    <div class="spacer2"></div>
-    <div id="nearbers-product-goals">
-        <div id="nearbers-product-goals-first">
+        <h3 class="padding-gap-top-24 heading-tertiary">
+          Challenge
+        </h3>
+        <p class="general-paragraph">How to break through the barriers and encourage interactions among apartment or
+          condo dwellers?
+        </p>
+      </div>
+    </section>
+
+    <!-- Project Research -->
+    <section id="research-section">
+      <div class="margin-bottom-gap-24 projects-grid--2-cols">
+        <h2 class="heading-secondary-projects">
+          🔎 Research
+        </h2>
+
+        <div>
+          <h3 class="heading-tertiary">Research Method</h3>
+          <p class="general-paragraph">
+            Competitor analysis and user interviews were selected to be used in this project.
+          </p>
+
+          <h3 class="padding-gap-top-24 heading-tertiary">Research Goals</h3>
+          <p class="general-paragraph">
+            - Gain insights into users' interactions with their neighbors
+          </p>
+          <p class="general-paragraph">
+            - Assess the market demand and potential for NearBers
+          </p>
+          <p class="general-paragraph">
+            - Understand the expectations and preferences
+          </p>
+
+          <h3 class="padding-gap-top-24 heading-tertiary">Competitor Analysis</h3>
+          <p class="general-paragraph">
+            I conducted a competitors analysis of two direct competitors in the industry, Nextdoor and OneRoof, to
+            gain insights into their strengths and weaknesses.
+          </p>
+          <img class="padding-gap-top-24 block-img-small-gap" alt="nearBers competitor analysis"
+            src="img/nearBersPage/2x-competitorAnalysis.jpg" />
+
+
+          <h3 class="padding-gap-top-24 heading-tertiary">Interview Main Takeaways</h3>
+          <p class="general-paragraph">
+            After reviewing the interviews, I identified the 6 most important points to focus on.
+          </p>
+          <div class="grid--2-col-half-auto-gap">
             <div>
-                <h3>Business Goals:</h3>
-                <div class="spacer3"></div>
-                <ul>
-                    <li>Develop mobile app
-                    <li>Develop brand
-                    <li>Get users
-                    <li>Run ads for profits
-                </ul>
+              <h4 class="heading-quaternary">
+                Desire for Social Connections
+              </h4>
+              <div>
+                <p class="paragraph-quaternary">
+                  Many participants expressed a desire for more social connections with their neighbors but found it
+                  challenging to meet and interact with them.
+                </p>
+              </div>
             </div>
-        </div>
-        <div id="nearbers-product-goals-middle">
-            <span>Create an app to meet users' needs</span>
-        </div>
-        <div id="nearbers-product-goals-last">
+
             <div>
-                <h3>User Goals:</h3>
-                <div class="spacer3"></div>
-                <ul>
-                    <li>Connect with neighors
-                    <li>Help and get help
-                    <li>Share things
-                    <li>Have parties
-                    <li>Supportive community
-                </ul>
+              <h4 class="heading-quaternary">
+                Feel Isolated
+              </h4>
+              <div>
+                <p class="paragraph-quaternary">
+                  Many participants feel isolated in their apartments, even after living in the building for a long
+                  time and not knowing their neighbors.
+                </p>
+              </div>
             </div>
+            <div>
+              <h4 class="heading-quaternary">
+                Hesitation in Community Activities
+              </h4>
+              <div>
+                <p class="paragraph-quaternary">
+                  Some participants mentioned their hesitation to participate in community activities, indicating a
+                  need for a platform that encourages and facilitates community engagement.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h4 class="heading-quaternary">
+                Privacy and Security Concerns
+              </h4>
+              <div>
+                <p class="paragraph-quaternary">
+                  Some participants expressed concerns about privacy and security issues, emphasizing the need for
+                  stringent measures in place.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="heading-quaternary">
+                Building Connections is Not Easy
+              </h4>
+              <div>
+                <p class="paragraph-quaternary">
+                  Participants highlighted the difficulties in building connections with neighbors, highlighting the
+                  importance of a solution that promotes community-building.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="heading-quaternary">
+                Comfort in Familiarity
+              </h4>
+              <div>
+                <p class="paragraph-quaternary">
+                  Some participants reported feeling more comfortable seeking help from people they know,
+                  emphasizing
+                  the importance of building relationships within the community.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="spacer1"></div>
+      </div>
+      <img class="full-width-img-24" alt="nearBers interview quotes" src="img/nearBersPage/2x-interview-quotes.jpg" />
+    </section>
 
-    <h2>Storyboard</h2>
-    <div class="spacer2"></div>
-    <div class="large-row">
-        <div><img src="nearbers-storyboard.png" alt="Comic about Nearbers app user"></div>
-        <div class="large-padding-left">
-            <p>The left storyboard describes two situations how Nearbers
-                can help users to support their neighbors.
-            <ul>
-                <li>In the first scenario, John wants to give away his old sofa.
-                    Jacob just moved into his new apartment and wants to get some furniture.
-                    Nearbers is a good platform for them to meet each other’s needs.
-                <li>In the second scenario, John is working and his Internet
-                    suddenly stops working.
-                    He hesitates to knock on his neighor’s door
-                    to ask if their Internet is also down.
-                    John can use Nearbers to ask.
-                    He can check on Nearbers,
-                    post information or see if anyone else has a similar issue.
-                    Jacob has mobile Hotspot, which can help
-                    John's dilemma of needing to work and not having Internet.
-            </ul>
+    <!-- Persona -->
+    <section>
+      <div class=" projects-grid--2-cols">
+        <div>
+          <h2 class="heading-secondary-projects">
+
+          </h2>
         </div>
-    </div>
-    <div class="spacer1"></div>
+        <div>
+          <h3 class="heading-tertiary">
+            User Profile
+          </h3>
+          <p class="general-paragraph">
+            Based on the insights gathered from the interviews, I created a persona to embody the key characteristics
+            and needs of the users, breathing life into their stories and aspirations.
+          </p>
+        </div>
+      </div>
+      <img class="block-img-big-gap" alt="nearBers persona" src="img/nearBersPage/2x-persona.jpg" />
+    </section>
 
-    <h2>User Flow</h2>
-    <div class="spacer2"></div>
-    <img src="nearbers-user-flow.svg" alt="User flow diagram">
-    <div class="spacer1"></div>
 
-    <h2>Paper Prototype</h2>
-    <div class="spacer2"></div>
-    <p>I sketched my ideas for the home page, as well as some different card formats.</p>
-    <div class="spacer2"></div>
-    <div class="large-row">
-        <div><img src="nearbers-paper1.png" alt="Sketches of app screens"></div>
-        &nbsp;
-        &nbsp;
-        <div><img src="nearbers-paper2.png" alt="Sketches of app screens"></div>
-    </div>
-    <div class="spacer1"></div>
+    <!-- Define The Problems -->
+    <section id="define-problems-section">
+      <div class="margin-bottom-gap-96  projects-grid--2-cols">
+        <div>
+          <h2 class="heading-secondary-projects">
+            ⚡️ Define Problems
+          </h2>
+        </div>
+        <div>
+          <h3 class="heading-tertiary">Problem Diagnosis </h3>
+          <p class="general-paragraph">
+            The research findings revealed that users expressed a sense of disconnection from their community and
+            wanted to forge connections with their neighbors. However, they encountered difficulties in establishing
+            these connections and didn't know how.
+          </p>
+          <img class="padding-gap-top-24 block-img-small-gap" alt="nearBers problem diagnosis"
+            src="img/nearBersPage/2x-needs-painPoins.jpg" />
 
-    <h2>Low-Fidelity</h2>
-    <div class="spacer2"></div>
-    <img src="nearbers-wireframes-low.png" alt="Screen mockups with placeholder text and images">
-    <div class="spacer1"></div>
+          <h3 class="padding-gap-top-24 heading-tertiary">How Might We... </h3>
+          <p class="general-paragraph">
+            I compiled a list of 'How Might We...' questions to assist me in better aligning our users' tasks and
+            goals.
+          </p>
+          <h4 class="heading-quaternary">
+            Foster Community Interactions
+          </h4>
+          <p class="paragraph-quaternary">
+            - How might we encourage users to initiate conversations and interactions with their neighbors?
+          </p>
+          <p class="paragraph-quaternary"> - How might we create opportunities for users to discover shared interests
+            and hobbies with their neighbors?</p>
+          <p class="paragraph-quaternary"> - How might we provide guidance and resources for users to overcome the
+            challenges of connecting with neighbors?</p>
+          <p class="paragraph-quaternary"> - How might we address potential barriers or hesitations that prevent users
+            from reaching out to their neighbors?</p>
+          <p class="paragraph-quaternary"> - How might we address privacy concerns while still fostering a sense of
+            community?</p>
+        </div>
+      </div>
+    </section>
 
-    <h2>High-Fidelity</h2>
-    <div class="spacer2"></div>
-    <img src="nearbers-wireframes-high.png" alt="Screen mockups">
+    <!-- Design Ideas -->
+    <section id="design-ideas-section">
+      <div>
+        <div class=" projects-grid--2-cols">
+          <div>
+            <h2 class="heading-secondary-projects">
+              💡 Design Ideas
+            </h2>
+          </div>
+          <div>
+            <h3 class="heading-tertiary">Brainstormed Possibilities For NearBers </h3>
+            <p class="general-paragraph">
+              I brainstormed ideas to encourage interactions and address privacy concerns for NearBers. There are
+              various aspects that NearBers can explore, including collaborative opportunities, social interactions,
+              and
+              other relevant aspects.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img class="padding-gap-top-24 block-img-big-gap" alt="brainstorm" src="img/nearBersPage/2x-brainstorm.jpg" />
+    </section>
 
-    <p style="text-align: center;">
-        <a class="button"
-           href="https://www.figma.com/file/9A3ygqHxPCA1yBbzXCm3b6/Nearbers-Public-Portfolio-Version---Emma-Wang?node-id=53%3A1365"
-    >View the Figma File</a>
-    </p>
+    <!-- User Flow Diagram -->
+    <section>
+      <div>
+        <div class=" projects-grid--2-cols">
+          <div>
+            <h2 class="heading-secondary-projects">
+              💫 User Flow Diagram
+            </h2>
+          </div>
+          <div>
+            <h3 class="heading-tertiary">Showing the path </h3>
+            <p class="general-paragraph">
+              I began by creating a user flow diagram to visualize how users navigate through the system.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img class="padding-gap-top-24 block-img-big-gap" alt="user flow diagram" src="img/nearBersPage/2x-UserFlowDiagram.jpg" />
+    </section>
 
-</main>
-<div class="spacer1 large"></div>
-<footer>
-    <div class="spacer3 small"></div>
-    <a href="mailto:emmawang.ux@gmail.com"><img src="/icon-envelope.svg" alt="envelope icon"></a>
-    <a href="https://www.linkedin.com/in/emma-wang-91847a223/"><img src="/icon-linkedin.svg" alt="LinkedIn icon"></a>
-</footer>
-<div class="spacer2 large"></div>
+    <!-- WIREFRAMING -->
+    <section>
+      <div>
+        <div class=" projects-grid--2-cols">
+          <div>
+            <h2 class="heading-secondary-projects">
+              💫 Wireframing
+            </h2>
+          </div>
+          <div>
+            <h3 class="heading-tertiary">Low-Fi Wireframes </h3>
+            <p class="general-paragraph">
+              I used the flow chart as a guide to create simple wireframes that display the initial design.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <img class="padding-gap-top-24 full-width-img" alt="low-fi" src="img/nearBersPage/2x-low-fiWireframes.jpg" />
+
+    <!-- Design -->
+    <section id="brand-identity-section">
+      <div class=" projects-grid--2-cols">
+        <div>
+          <h2 class="heading-secondary-projects">
+            🎨 Design
+          </h2>
+        </div>
+        <div>
+          <h3 class="heading-tertiary">Brand Definition </h3>
+          <p class="general-paragraph">
+            Brand Definition: Neat, trustworthy, and inclusive are the three elements that NearBers need to
+            prioritize.
+          </p>
+          <img class="padding-gap-top-24 block-img-small-gap" alt="brand definition"
+            src="img/nearBersPage/2x-brandDefinition.jpg" />
+
+          <h3 class="heading-tertiary">Logo & Typography </h3>
+          <p class="general-paragraph">
+            NearBers chose the "Inter" typeface for its versatility, modern appeal, and soft curves that reflect
+            inclusivity. The Dodger Blue color was selected for its trustworthiness, professionalism, and
+            eye-catching yet balanced presence.
+          </p>
+          <img class="padding-gap-top-24 block-img-small-gap" alt="logo and typography"
+            src="img/nearBersPage/2x-logo-typography.jpg" />
+
+          <h3 class="padding-gap-top-24 heading-tertiary">Design System </h3>
+          <p class="general-paragraph">
+            I created a design system with clear guidelines, components, and styles to ensure consistent and
+            efficient design across the project.
+          </p>
+          <img class="padding-gap-top-24 block-img-big-gap" alt="design system" src="img/nearBersPage/2x-designSystem.jpg" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Final Delivery -->
+    <section id="high-fidelity-version-section">
+      <div class=" projects-grid--2-cols">
+        <div>
+          <h2 class="heading-secondary-projects">
+            ❤️ Final Delivery
+          </h2>
+        </div>
+        <div>
+          <h3 class="heading-tertiary">Project Completion </h3>
+          <p class="general-paragraph">
+            Putting everything together, I used Figma to create the high-fidelity version.
+          </p>
+          <h3 class="padding-gap-top-24 heading-tertiary">Tying Back To The Design Challenge </h3>
+          <p class="general-paragraph">
+            Promoting connections and interactions among apartment or condo dwellers, breaking through obstacles to
+            foster a sense of community.
+          </p>
+          <h4 class="heading-quaternary">
+            Community Posting
+          </h4>
+          <p class="paragraph-quaternary">
+            On the NearBers homepage, people can create and share different kinds of posts. These posts can be about
+            neighborhood news, events that are coming up. Users can also add pictures or videos to their posts, so they
+            can share colorful content with others.
+          </p>
+
+          <h4 class="heading-quaternary">
+            Building Communities, Finding Common Ground
+          </h4>
+          <p class="paragraph-quaternary">
+            NearBers lets users see neighbors' hobbies and interests on their profiles. This helps them find like-minded
+            neighbors and start conversations easily. Users can use preferred names, not real names, and room numbers
+            are kept private for security.
+          </p>
+
+          <h4 class="heading-quaternary">
+            Chat Channels
+          </h4>
+          <p class="paragraph-quaternary">
+            NearBers offers users the option to create personalized channels under the chat page. Users can create
+            channels based on shared hobbies or interests, allowing neighbors to gather and engage in discussions
+            specific to their preferences.
+          </p>
+    </section>
+
+    <img class="padding-gap-top-24 block-img-big-gap" alt="NearBers" src="img/nearBersPage/2x-some-showcase.jpg" />
+
+
+    <!-- Reflection -->
+    <section>
+      <div>
+        <div class=" projects-grid--2-cols">
+          <div>
+            <h2 class="heading-secondary-projects">
+              ✨ Reflection
+            </h2>
+          </div>
+          <div>
+            <h3 class="heading-tertiary">Outcome Discussion</h3>
+            <p class="general-paragraph">
+              NearBers is a project that aims to revolutionize the way we experience apartment living. With
+              NearBers,
+              users can seek help, share information, and build a small but supportive community. Neighbors become
+              friends in your urban journey. Although I haven't conducted formal usability tests, I will get a
+              chance
+              to test the app, gather feedback, and make necessary improvements.
+            </p>
+            <h3 class="padding-gap-top-24 heading-tertiary">Learning By Doing</h3>
+            <p class="general-paragraph">
+              One of the key takeaways from this experience was the importance of learning by doing. Theory alone
+              is
+              not enough, and taking action is crucial for learning and growth. Throughout the project, from the
+              initial stages to the final design, I had the experience to apply my knowledge in a practical
+              setting.
+              This hands-on experience also allowed me to become more comfortable and proficient in using Figma.
+            </p>
+
+            <h3 class="padding-gap-top-24 heading-tertiary">Focused On One Feature</h3>
+            <p class="general-paragraph">
+              In the project, my main focus was on developing a feature that aimed to break through the walls and
+              encourage interactions among apartment or condo dwellers. After completing the design, I shared with
+              a
+              few friends, one mentioned, "This app is a game-changer! No more wall-pounding when dealing with
+              loud
+              neighbors late at night!" This feedback emphasized how the feature addressed common issues and
+              significantly improved the overall living experience for apartment or condo dwellers.
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class=" grid--3-cols-footer">
+        <div>
+          <p class="footer-title">
+            Thanks for stopping by ❤️ </p>
+          <p class="footer-sub">
+            Copyright &copy; <span class="year">2030</span> by Emma Wang
+          </p>
+        </div>
+
+        <div>
+          <p class="footer-title">
+            Get in touch 📧 </p>
+            <a class="footer-link footer-sub" href="mailto:Emmawang8989@gmail.com" >Emmawang8989@gmail.com</a>
+        </div>
+
+        <div>
+          <p class="footer-title">
+            Stay connected 👋 </p>
+          <a class="footer-link footer-sub" href="https://www.linkedin.com/in/emmawangdesign/"
+            target="_blank">LinkedIn</a>
+        </div>
+    </footer>
 </body>
+
 </html>
+
