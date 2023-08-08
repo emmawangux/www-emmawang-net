@@ -261,6 +261,9 @@ p {
 }
 
 /* GENERAL REUSABLE COMPONENTS */
+.no-cursor {
+  cursor: default;
+}
 .section-box {
   border: #fff 1px solid;
 }
@@ -379,6 +382,11 @@ p {
 /* Home Page - Main & Body CSS */
 .showCase-Img-box {
   overflow: hidden;
+}
+
+.gifBox {
+  background-color: #f5f5f5;
+  aspect-ratio: 1.3333333;
 }
 
 .section-box .hover-link {
