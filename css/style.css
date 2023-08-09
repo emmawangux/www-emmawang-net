@@ -252,6 +252,11 @@ p {
   margin-top: 0;
 }
 
+.link {
+  color: #2eb07a;
+  text-decoration: none;
+}
+
 /* About Page - Main & Body CSS */
 .aboutPage-paragraph {
   font-weight: 400;
