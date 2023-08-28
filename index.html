@@ -15,9 +15,10 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@400;600&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css?v=4" />
-  <link rel="stylesheet" href="css/queries.css?v=4" />
+  <link rel="stylesheet" href="css/style.css?v=4.1" />
+  <link rel="stylesheet" href="css/queries.css?v=4.1" />
   <script defer src="js/script.js"></script>
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-01C8PN3V99"></script>
@@ -39,7 +40,7 @@
   <header class="header">
     <div class="header-box">
       <a href="index.html">
-        <img class="logo" alt="emma-wang-logo" src="img/landingPageImgs/emmawang-Logo.svg" />
+        <img class="logo" alt="emma-wang-logo" src="img/landingPageImgs/logo.svg" />
       </a>
       <nav class="main-nav">
         <input type="checkbox" />
@@ -55,13 +56,21 @@
   </header>
 
   <div id="page">
-    <div class="subTitle">Visual & UX Designer</div>
+    <div class="h1-top-bottom-gap">
+      <h1>你好! Hello~ 👋 I am Emma - a Visual & UX Designer.
+        I believe in leading with open-mindedness and empathy to create thoughtful designs.</h1>
+      <div class="sub-paragraph">
+        <a href="#project-section" class="text-decoration">
+          See projects ↓
+        </a>
+      </div>
+    </div>
 
-    <section>
+    <section id="project-section">
       <!-- Project Rebound -->
       <section class="section-box">
         <a href="project-rebound.html" class="hover-link">
-          <div class="margin-bottom-gap-96 grid grid--2-cols">
+          <div class="margin-bottom-gap-128 grid grid--2-cols">
             <div>
               <h2>Project Rebound</h2>
               <span class="heading-secondary-subheading">Web App ｜ 2023</span>
@@ -77,15 +86,57 @@
         </a>
       </section>
 
+      <!-- NearBers -->
+      <section class="section-box">
+        <a href="nearbers.html" class="hover-link">
+          <div class="margin-bottom-gap-128 grid grid--2-cols">
+            <div>
+              <h2>NearBers</h2>
+              <span class="heading-secondary-subheading">Mobile App ｜ 2019</span>
+              <p class="hover-link">NearBers is a social networking app designed specifically for connecting
+                people with their
+                neighbors in the
+                same building to create a supportive community. </p>
+            </div>
+
+            <div class="showCase-Img-box">
+              <img src="img/landingPageImgs/2x-NearBers.jpg" class="showCase-img img-hover" alt="nearbers mockup" />
+            </div>
+          </div>
+        </a>
+      </section>
+
+
+      <!-- Pattern Awareness -->
+      <section class="section-box">
+        <a href="pattern-awareness.html" class="hover-link">
+          <div class="margin-bottom-gap-128 grid grid--2-cols">
+            <div>
+              <h2>Pattern Awareness</h2>
+              <span class="heading-secondary-subheading">WebSite ｜ 2023</span>
+              <p class="hover-link">Pattern Awareness is my capstone project. It's a website dedicated to raising
+                awareness among people, especially design students, about the use of deceptive patterns in digital
+                products.
+              </p>
+            </div>
+
+            <div class="showCase-Img-box gifBox">
+              <img src="img/landingPageImgs/patternAwareness.gif" class="showCase-img img-hover"
+                alt="pattern awareness mockup" />
+            </div>
+          </div>
+        </a>
+      </section>
+
       <section>
-        <!-- Applin -->
         <section class="section-box">
           <a href="index.html" class="hover-link no-cursor">
-            <div class="margin-bottom-gap-96 grid grid--2-cols">
+            <div class="grid grid--2-cols">
               <div>
                 <h2>Applin</h2>
                 <span class="heading-secondary-subheading">Responsive Web ｜ 2023</span>
-                <p class="hover-link">Designing a responsive website for Applin™ that aims to highlight its innovative features and benefits. </p>
+                <p class="hover-link">Designing a responsive website for Applin™ that aims to highlight its innovative
+                  features and benefits. </p>
                 <p class="coming-soon">
                   Coming Soon
                 </p>
@@ -99,53 +150,12 @@
           </a>
         </section>
 
-
-        <!-- NearBers -->
-        <section class="section-box">
-          <a href="nearbers.html" class="hover-link">
-            <div class="margin-bottom-gap-96 grid grid--2-cols">
-              <div>
-                <h2>NearBers</h2>
-                <span class="heading-secondary-subheading">Mobile App ｜ 2019</span>
-                <p class="hover-link">NearBers is a social networking app designed specifically for connecting
-                  people with their
-                  neighbors in the
-                  same building to create a supportive community. </p>
-              </div>
-
-              <div class="showCase-Img-box">
-                <img src="img/landingPageImgs/2x-NearBers.jpg" class="showCase-img img-hover" alt="nearbers mockup" />
-              </div>
-            </div>
-          </a>
-        </section>
-
-
-        <!-- Pattern Awareness -->
-        <section class="section-box">
-          <a href="pattern-awareness.html" class="hover-link">
-            <div class="grid grid--2-cols">
-              <div>
-                <h2>Pattern Awareness</h2>
-                <span class="heading-secondary-subheading">WebSite ｜ 2023</span>
-                <p class="hover-link">Pattern Awareness is my capstone project. It's a website dedicated to raising awareness among people, especially design students, about the use of deceptive patterns in digital products.
-                </p>
-              </div>
-
-              <div class="showCase-Img-box gifBox">
-                <img src="img/landingPageImgs/patternAwareness.gif" class="showCase-img img-hover"
-                  alt="pattern awareness mockup" />
-              </div>
-            </div>
-          </a>
-        </section>
-
         <!-- Footer -->
         <footer class="footer">
           <div class="grid--3-cols-footer">
             <div>
               <p class="footer-title">
-                Thanks for stopping by ❤️ </p>
+                Thanks for stopping by 💗 </p>
               <p class="footer-sub">
                 Copyright &copy; <span class="year">2030</span> by Emma Wang
               </p>

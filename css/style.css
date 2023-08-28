@@ -2,9 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-padding-top: 12.8rem;
 }
+
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Inter", "Helvetica", sans-serif;
@@ -18,11 +21,12 @@ body {
   width: 100%;
   margin: 0;
   background-color: #fff;
+  border-bottom: 0.1rem solid #fafafa;
 }
 .header-box {
   margin: 0 auto;
   max-width: 120rem;
-  height: 9.6rem;
+  height: 12.8rem;
   padding-left: 3.2rem;
   padding-right: 3.2rem;
 
@@ -32,7 +36,7 @@ body {
 }
 
 .logo {
-  height: 3.6rem;
+  height: 3.2rem;
 }
 
 /* NAVIGATION */
@@ -137,15 +141,7 @@ body {
   padding-left: 3.2rem;
   padding-right: 3.2rem;
   margin: 0 auto;
-  margin-bottom: 9.6rem;
-}
-.subTitle {
-  font-weight: 400;
-  font-size: 1.6rem;
-  letter-spacing: 0.75px;
-  margin-bottom: 8rem;
-  color: #333;
-  overflow: visible;
+  margin-bottom: 12.8rem;
 }
 
 .highlight {
@@ -160,9 +156,39 @@ body {
 }
 
 /* Fonts */
+h1 {
+  color: #444;
+  font-weight: 600;
+  font-size: 4.4rem;
+  line-height: 1.8;
+  margin-bottom: 2.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.h1-top-bottom-gap {
+  padding-top: 17.6rem;
+  padding-bottom: 25.6rem;
+}
+
+.text-decoration {
+  text-decoration: none;
+  color: #444;
+}
+
+.sub-paragraph {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 3.2rem;
+}
+
+.text-decoration:hover {
+  transition: color 0.3s;
+  color: #eb4c4b;
+}
+
 h2 {
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -278,7 +304,7 @@ p {
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50vw);
-  margin-bottom: 9.6rem;
+  margin-bottom: 12.8rem;
 }
 
 .full-width-img-24 {
@@ -300,14 +326,14 @@ p {
   display: block;
   width: 100%;
   height: auto;
-  margin-bottom: 9.6rem;
+  margin-bottom: 12.8rem;
 }
 .margin-top {
-  margin-top: 9.6rem;
+  margin-top: 12.8rem;
 }
 
-.margin-bottom-gap-96 {
-  margin-bottom: 9.6rem;
+.margin-bottom-gap-128 {
+  margin-bottom: 12.8rem;
 }
 
 .margin-bottom-gap-24 {
@@ -320,7 +346,7 @@ p {
 
 .grid {
   display: grid;
-  gap: 9.6rem;
+  gap: 12.8rem;
 }
 
 .grid--2-cols {
@@ -329,7 +355,7 @@ p {
 
 .projects-grid--2-cols {
   display: grid;
-  gap: 9.6rem;
+  gap: 12.8rem;
   grid-template-columns: 3fr 7fr;
 }
 
@@ -355,12 +381,12 @@ p {
   display: grid;
   grid-template-columns: 4.8fr 0.4fr 4.8fr;
   gap: 1rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 12.8rem;
 }
 
 .grid--3-cols-footer {
   display: grid;
-  gap: 9.6rem;
+  gap: 12.8rem;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -486,7 +512,7 @@ iframe {
 
 /* FOOTER */
 .footer {
-  margin-top: 9.6rem;
+  margin-top: 12.8rem;
   justify-content: space-evenly;
   align-items: center;
   position: relative;
