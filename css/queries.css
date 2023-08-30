@@ -22,6 +22,7 @@
   .grid--2-cols-about-page {
     grid-template-columns: 1fr;
   }
+
   .projects-grid--2-cols {
     gap: 2.4rem;
     grid-template-columns: 1fr;
