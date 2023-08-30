@@ -4,6 +4,15 @@
     font-size: 60%;
   }
 
+  .grey-title {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 3.8rem;
+  }
+
   .grid {
     gap: 3.2rem;
   }
@@ -14,7 +23,7 @@
     grid-template-columns: 1fr;
   }
   .projects-grid--2-cols {
-    gap: 1.6rem;
+    gap: 2.4rem;
     grid-template-columns: 1fr;
   }
 
@@ -28,6 +37,10 @@
     margin-top: 4.8rem;
   }
 
+  .h1 {
+    font-size: 1.8rem;
+  }
+
   .paragraph {
     margin-top: 1.2rem;
   }
@@ -39,7 +52,8 @@
 
   .project-intro {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .emma {

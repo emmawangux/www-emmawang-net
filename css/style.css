@@ -9,11 +9,13 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+
 body {
-  font-family: "Inter", "Helvetica", sans-serif;
+  font-family: "Inter", "Red Hat Display", "Helvetica", sans-serif;
   font-weight: 400;
   color: #333;
 }
+
 .header {
   z-index: 1000;
   position: sticky;
@@ -23,6 +25,7 @@ body {
   background-color: #fff;
   border-bottom: 0.1rem solid #fafafa;
 }
+
 .header-box {
   margin: 0 auto;
   max-width: 120rem;
@@ -48,6 +51,7 @@ body {
   width: 4rem;
   height: 4rem;
 }
+
 .main-nav input {
   z-index: 9999;
   opacity: 0;
@@ -60,21 +64,26 @@ body {
     display: block;
   }
 }
+
 .main-nav img {
   color: #333;
   display: none;
 }
+
 @media (max-width: 44em) {
   .main-nav img {
     display: block;
     z-index: 1200;
   }
+
   .main-nav input:checked ~ img.open {
     display: none;
   }
+
   .main-nav .close {
     display: none;
   }
+
   .main-nav input:checked ~ img.close {
     display: block;
   }
@@ -86,6 +95,7 @@ body {
   align-items: center;
   gap: 6.4rem;
 }
+
 @media (max-width: 44em) {
   .main-nav ul {
     z-index: 1100;
@@ -107,6 +117,7 @@ body {
     opacity: 0;
     /* visibility: hidden; */
   }
+
   .main-nav input:checked ~ ul {
     pointer-events: auto;
     /* visibility: visible; */
@@ -114,6 +125,7 @@ body {
     opacity: 1;
   }
 }
+
 .main-nav a {
   text-decoration: none;
   color: #333;
@@ -121,15 +133,18 @@ body {
   font-size: 1.6rem;
   transition: all 0.3s;
 }
+
 .main-nav a:hover,
 .main-nav a:active,
 .main-nav a.selected {
   color: #ed5e5d;
 }
+
 .main-nav a.selected {
   font-weight: 400;
   border-bottom: currentColor 0.2rem solid;
 }
+
 @media (max-width: 44em) {
   .main-nav a {
     font-size: 2rem;
@@ -144,44 +159,44 @@ body {
   margin-bottom: 12.8rem;
 }
 
-.highlight {
-  color: #ef706f;
-  transition: color 0.3s;
-  text-decoration: none;
-  font-weight: 500;
-}
-
 .highlight:hover {
   color: #eb4c4b;
 }
 
 /* Fonts */
+.grey-title {
+  font-family: "Red Hat Display";
+  font-size: 2.4rem;
+  color: #737373;
+}
+
 h1 {
+  font-family: "Red Hat Display";
   color: #444;
-  font-weight: 600;
-  font-size: 4.4rem;
-  line-height: 1.8;
-  margin-bottom: 2.4rem;
-  letter-spacing: 0.1rem;
-}
-
-.h1-top-bottom-gap {
-  padding-top: 17.6rem;
-  padding-bottom: 25.6rem;
-}
-
-.text-decoration {
-  text-decoration: none;
-  color: #444;
+  font-weight: 700;
+  font-size: 6.2rem;
+  line-height: 1.1;
+  letter-spacing: 0.2rem;
+  margin-top: 2.4rem;
 }
 
 .sub-paragraph {
   font-weight: 400;
   font-size: 1.6rem;
-  margin-top: 3.2rem;
+  margin-top: 6.4rem;
 }
 
-.text-decoration:hover {
+.h1-top-bottom-gap {
+  padding-top: 19.2rem;
+  padding-bottom: 25.6rem;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+  color: #666;
+}
+
+.text-decoration-none:hover {
   transition: color 0.3s;
   color: #eb4c4b;
 }
@@ -235,27 +250,25 @@ p {
   margin-top: 2.4rem;
 }
 
-.coming-soon {
-  font-family: "Open Sans", "Inter", "Helvetica", sans-serif;
-  font-weight: 400;
-  font-size: 2.4rem;
-  color: #7e8397;
-  margin-top: 0.8rem;
-}
-
 .funPage-paragraph {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.8;
   color: #525252;
 }
+
+.bold {
+  font-weight: bold;
+  box-shadow: inset 0 -4px 0 0 #fecb3a;
+}
+
 /* project's paragraph */
 .general-paragraph {
   font-weight: 400;
   font-size: 1.8rem;
   color: #525252;
   line-height: 1.8;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   margin-top: 0.4rem;
 }
 
@@ -274,7 +287,16 @@ p {
   font-size: 1.6rem;
   color: #707070;
   line-height: 1.8;
-  padding-bottom: 1rem;
+  padding-bottom: 1.6rem;
+  margin-top: 0;
+}
+
+.paragraph-quaternary-2 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #707070;
+  line-height: 1.8;
+  padding-bottom: 1.6rem;
   margin-top: 0;
 }
 
@@ -295,6 +317,7 @@ p {
 .no-cursor {
   cursor: default;
 }
+
 .section-box {
   border: #fff 1px solid;
 }
@@ -328,8 +351,17 @@ p {
   height: auto;
   margin-bottom: 12.8rem;
 }
+
 .margin-top {
   margin-top: 12.8rem;
+}
+
+.margin-top-96 {
+  margin-top: 96rem;
+}
+
+.margin-minus {
+  margin-top: -0.2rem;
 }
 
 .margin-bottom-gap-128 {
