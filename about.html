@@ -1,106 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/landingPageImgs/favicon-Emma.svg" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script defer src="js/script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-01C8PN3V99"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-  <link rel="icon" href="img/landingPageImgs/favicon-Emma.svg" />
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-  <link rel="manifest" href="manifest.webmanifest" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css?v=5" />
-  <link rel="stylesheet" href="css/queries.css?v=5" />
-  <script defer src="js/script.js"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-01C8PN3V99"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-01C8PN3V99');
-  </script>
-  <title>Emma Wang - Visual & UX Designer</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header-box">
-      <a href="index.html">
-        <img class="logo" alt="emma-wang-logo" src="img/landingPageImgs/logo.svg" />
-      </a>
-      <nav class="main-nav">
-        <input type="checkbox" />
-        <img src="img/landingPageImgs/menu-outline.svg" class="button open" />
-        <img src="img/landingPageImgs/close-outline.svg" class="button close" />
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="other-works.html">Other Works</a></li>
-          <li><a class="selected" href="about.html">About</a></li>
-        </ul>
-      </nav>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-01C8PN3V99");
+    </script>
+    <title>Emma Wang - Product Designer</title>
+  </head>
+  <body>
+    <div class="custom-cursor-effect">
+      <div class="inner-dot"></div>
     </div>
-  </header>
-  <div id="page">
-    <main class="margin-top grid grid--2-cols-about-page">
-      <div class="centered">
-        <h2 class="heading-secondary-projects">👋 Hello there!</h2>
-        <p class="aboutPage-paragraph">
-          My name is Emma Wang. I am a visual & UX designer.
-        </p>
-        <p class="aboutPage-paragraph">
-          I'm a responsible and self-driven designer who loves using Figma to craft simple yet visually engaging digital
-          interfaces. Originally from China's lush Zhejiang province, I now call foggy SF home. 
-        </p>
-        <p class="aboutPage-paragraph">
-          To me, designing solutions is a profound responsibility that demands an intimate understanding of users'
-          aspirations. I believe in leading with open-mindedness and empathy, valuing the perspectives of others to
-          create thoughtful designs.
-        </p>
+    <div class="container">
+      <div class="content">
+        <nav class="side-nav">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                class="logo"
+                alt="e-w-logo"
+                src="img/landingPageImgs/e:w.svg"
+              />
+            </a>
+          </div>
+          <ul>
+            <li id="nav-home" class="nav-item">
+              <a href="index.html">
+                <img src="img/landingPageImgs/home-icon.svg" alt="Home Icon" />
+                <span>HOME</span>
+              </a>
+            </li>
+            <li id="nav-works" class="nav-item">
+              <a href="other-works.html">
+                <img
+                  src="img/landingPageImgs/works-icon.svg"
+                  alt="Works Icon"
+                />
+                <span>OTHER WORKS</span>
+              </a>
+            </li>
+            <li id="nav-about" class="nav-item active">
+              <a href="about.html">
+                <img
+                  src="img/landingPageImgs/about-icon.svg"
+                  alt="About Icon"
+                />
+                <span>ABOUT</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Hamburger menu -->
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                class="logo"
+                alt="e-w-logo"
+                src="img/landingPageImgs/e:w.svg"
+              />
+            </a>
+          </div>
+          <div class="circle-background">
+            <div class="hamburger-icon" id="hamburger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="hamburger-nav-items" id="hamburger-nav-items">
+            <li class="close-button-container">
+              <button class="close-button" id="close-button">Close</button>
+            </li>
+            <li id="nav-home-ham" class="nav-item">
+              <a href="index.html">HOME</a>
+            </li>
+            <li id="nav-works-ham" class="nav-item active">
+              <a href="other-works.html">OTHER WORKS</a>
+            </li>
+            <li id="nav-about-ham" class="nav-item">
+              <a href="about.html">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+        <!-- About Page -->
+        <main>
+          <!-- Right Up Pic -->
+          <div class="image-right-up-container">
+            <img
+              src="img/aboutPageImgs/profile-emma-right-up.jpg"
+              alt="Emma with plants"
+              class="image-up-right"
+            />
+          </div>
+          <!-- Little About ME -->
+          <div class="little-about-me-container">
+            <div class="little-about-me-grid">
+              <img
+                src="img/aboutPageImgs/profile-emma-plant.jpg"
+                alt="Emma with plants"
+                class="image-about"
+                id="profile-image"
+              />
+              <div class="about-text-container">
+                <h2>A Little About Me</h2>
+                <p>
+                  My name is Emma Wang. I am a visual and UX designer currently
+                  working at LingoLeap.ai.
+                </p>
+                <p>
+                  I'm a responsible and self-driven designer who loves using
+                  Figma to craft simple yet visually engaging digital
+                  interfaces. Originally from China's lush Zhejiang province, I
+                  now call foggy SF home. My design journey began at San
+                  Francisco State University, where I honed my skills in UX,
+                  graphic design, and interactive design.
+                </p>
+                <p>
+                  To me, designing solutions is a profound responsibility that
+                  demands an intimate understanding of users' aspirations. I
+                  believe in leading with open-mindedness and empathy, valuing
+                  the perspectives of others to create thoughtful designs.
+                </p>
+                <a
+                  href="https://read.cv/emmawang"
+                  target="_blank"
+                  class="btn-learn-more"
+                  >View Resume ↗</a
+                >
+              </div>
+            </div>
+            <div class="custom-cursor">
+              <div class="custom-cursor-icon">
+                <img
+                  src="img/landingPageImgs/link.svg"
+                  alt="Link Icon"
+                  class="link-icon"
+                />
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
 
-      <div class="centered">
-        <img class="emma" alt="emma wang" src="img/aboutPage/emma.jpg" />
-      </div>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class=" grid--3-cols-footer">
-        <div>
-          <p class="footer-title">
-            Thanks for stopping by 💗  </p>
-          <p class="footer-sub">
-            Copyright &copy; <span class="year">2030</span> by Emma Wang
-          </p>
+      <footer class="footer-container">
+        <div class="footer-content footer-content-left">
+          <a href="mailto:emmawang8989@gmail.com" class="footer-link"
+            >Emmawang8989@gmail.com</a
+          >
+          <a
+            href="https://www.linkedin.com/in/emmawangdesigner"
+            target="_blank"
+            class="footer-link"
+            >LinkedIn</a
+          >
         </div>
-
-        <div>
-          <p class="footer-title">
-            Get in touch 📧 </p>
-          <a class="footer-link footer-sub" href="mailto:Emmawang8989@gmail.com">Emmawang8989@gmail.com</a>
+        <div class="footer-content footer-content-right">
+          <span>© 2024 by Emma Wang</span>
         </div>
-
-        <div>
-          <p class="footer-title">
-            Stay connected 👋 </p>
-          <a class="footer-link footer-sub" href="https://www.linkedin.com/in/emmawangdesigner"
-            target="_blank">LinkedIn</a>
-        </div>
-    </footer>
-  </div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/landingPageImgs/favicon-Emma.svg" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script defer src="js/script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-01C8PN3V99"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-01C8PN3V99");
+    </script>
+    <title>Emma Wang - Product Designer</title>
+  </head>
+  <body>
+    <div class="custom-cursor-effect">
+      <div class="inner-dot"></div>
+    </div>
+    <div class="container">
+      <div class="content">
+        <nav class="side-nav">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                class="logo"
+                alt="e-w-logo"
+                src="img/landingPageImgs/e:w.svg"
+              />
+            </a>
+          </div>
+          <ul>
+            <li id="nav-home" class="nav-item">
+              <a href="index.html">
+                <img src="img/landingPageImgs/home-icon.svg" alt="Home Icon" />
+                <span>HOME</span>
+              </a>
+            </li>
+            <li id="nav-works" class="nav-item">
+              <a href="other-works.html">
+                <img
+                  src="img/landingPageImgs/works-icon.svg"
+                  alt="Works Icon"
+                />
+                <span>OTHER WORKS</span>
+              </a>
+            </li>
+            <li id="nav-about" class="nav-item">
+              <a href="about.html">
+                <img
+                  src="img/landingPageImgs/about-icon.svg"
+                  alt="About Icon"
+                />
+                <span>ABOUT</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Hamburger menu -->
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                class="logo"
+                alt="e-w-logo"
+                src="img/landingPageImgs/e:w.svg"
+              />
+            </a>
+          </div>
+          <div class="circle-background">
+            <div class="hamburger-icon" id="hamburger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="hamburger-nav-items" id="hamburger-nav-items">
+            <li class="close-button-container">
+              <button class="close-button" id="close-button">Close</button>
+            </li>
+            <li id="nav-home-ham" class="nav-item">
+              <a href="index.html">HOME</a>
+            </li>
+            <li id="nav-works-ham" class="nav-item active">
+              <a href="other-works.html">OTHER WORKS</a>
+            </li>
+            <li id="nav-about-ham" class="nav-item">
+              <a href="about.html">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Lingoleap -->
+        <main class="bg141414">
+          <div class="projects-hero grid--2-cols-main-projects pull-feeling">
+            <img
+              src="img/lingoleap/lingoleap-cover-img.png"
+              alt="Marketing Img"
+              class="image-projects-hero"
+            />
+            <div class="project-hero-text-box">
+              <div class="box-project-hero-title">
+                <h3>Optimized LingoLeap's Sign-Up Flow</h3>
+                <span class="timeline">Aug 2024 - Oct 2024</span>
+              </div>
+              <div class="box-project-hero-p">
+                <p>
+                  Before the redesign, LingoLeap's sign-up flow was confusing
+                  and caused high drop-offs. After implementing key UX
+                  improvements, sign-up completion rates increased by 64%.
+                </p>
+                <a
+                  href="https://lingoleap.ai"
+                  target="_blank"
+                  class="btn-learn-more"
+                  >lingoleap.ai→</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="container-main-works">
+            <div class="context-main-projects">
+              <h3 class="heading-with-line">"Let's fix it."</h3>
+              <p>
+                I joined LingoLeap in August 2024, stepping into a fast-paced
+                startup environment. With no structured onboarding, I jumped
+                right in with my laptop and started getting up-to-speed on the
+                product.
+              </p>
+              <p>
+                To get familiar, I started where any new user would: signing up.
+                That's when I noticed friction. The process wasn't broken, but
+                it felt… clunky. A few small friction points here, an unexpected
+                dead end there. If I am stuck here and there, what were users
+                experiencing? To confirm my observations, I checked the data. It
+                showed that 79.7% of users abandoned the process after clicking
+                "Register."
+              </p>
+              <p>
+                Sign up and Login aren't just user experience touchpoints, they
+                are like the front door to a product. If users struggle to open
+                it, they may turn away before even stepping inside. A smooth
+                entry experience directly impacts user acquisition. I documented
+                the issues and compiled a recommendation report outlining what
+                was happening and how we could improve it. After reviewing it,
+                my PM came back with: 💬 "Let's fix it."
+              </p>
+              <img
+                src="img/lingoleap/open-door.png"
+                alt="image of open door"
+                class="image-projects"
+              />
+            </div>
+            <div class="context-main-projects">
+              <h3 class="heading-with-line">
+                The 4 Core Issues in the Sign-Up Flow
+              </h3>
+              <p>
+                <span class="paragraph-highlight">
+                  1. Unnecessary Detours and Defaulting to Phone Instead of
+                  Email</span
+                >
+              </p>
+              <p>
+                PROBLEM: New users were forced to navigate an unnecessary
+                detour. Both the "Login / Sign Up" and “Start Free Practice
+                Test” buttons on the homepage led to the login page, requiring
+                users to manually find and click "Sign Up" to begin the process.
+                Additionally, the default sign-up method was set to phone
+                number, even though data showed that most users preferred email.
+                This added extra steps and confusion.
+              </p>
+              <p>
+                IMPACT: This created friction for new users, delaying their
+                ability to start using the platform and potentially increasing
+                bounce rates.
+              </p>
+
+              <div class="img-container">
+                <img
+                  src="img/lingoleap/lingoleap-old-login-process.png"
+                  alt="Landing Page Path Leads to Login Page"
+                  class="image-projects-zoomable zoomable"
+                />
+                <span class="cap">Landing Page Path Leads to Login Page</span>
+              </div>
+              <div class="img-container">
+                <img
+                  src="img/lingoleap/remove-steps.png"
+                  alt="Image shows old sign up process"
+                  class="image-projects-zoomable zoomable"
+                />
+                <span class="cap">We Can Remove Extra Clicks</span>
+              </div>
+
+              <p>
+                <span class="paragraph-highlight">
+                  2. Unhelpful Error Messages and Poor Feedback Mechanisms</span
+                >
+              </p>
+
+              <p>
+                PROBLEM: The system displayed error messages like “Bad email
+                format” (even when the email was correct) and “Email can't be
+                empty” (even when the field was filled). These messages appeared
+                as toast notifications that disappeared after 3 seconds, forcing
+                users to read and remember them quickly.
+              </p>
+              <p>
+                IMPACT: Confusing and fleeting error messages eroded user
+                confidence, making the system appear unreliable. Poor visual
+                feedback further frustrated users during a critical moment in
+                their journey.
+              </p>
+
+              <div class="img-container">
+                <img
+                  src="img/lingoleap/bad-email-format.png"
+                  alt="Bad email format message"
+                  class="image-projects-zoomable zoomable"
+                />
+                <span class="cap">Bad Email Format Error Message</span>
+              </div>
+              <div class="img-container">
+                <img
+                  src="img/lingoleap/email-cannot-be-empty-error-message.png"
+                  alt="Email cannot be empty error message"
+                  class="image-projects-zoomable zoomable"
+                />
+                <span class="cap">Email Cannot Be Empty Error Message</span>
+              </div>
+
+              <p>
+                <span class="paragraph-highlight">
+                  3. Forgot Password Paradox</span
+                >
+              </p>
+
+              <p>
+                PROBLEM: The password reset flow required users to enter their
+                old password to reset it, which defeated the purpose of a
+                password reset. If users forgot their password, they were unable
+                to complete the process, leaving them stuck.
+              </p>
+              <p>
+                IMPACT: This created a dead end for users who needed help,
+                leading to frustration and potential abandonment of the
+                platform.
+              </p>
+
+              <div class="img-container">
+                <iframe
+                  src="https://www.youtube.com/embed/o7Z2DX5S1Fo?si=TwMXfskGdBoZTKJW"
+                  title="YouTube video player"
+                  class="youtube-iframe"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <span class="cap"
+                  >Need Enter Existing Password in Forget Password Process</span
+                >
+              </div>
+
+              <p>
+                <span class="paragraph-highlight"
+                  >4. Clunky UI Elements and Interactions</span
+                >
+              </p>
+
+              <p>
+                PROBLEM: The UI had several inconsistencies and usability
+                issues:
+              </p>
+              <ul>
+                <li>
+                  Phone number and email tabs looked like labels, not
+                  interactive buttons.
+                </li>
+                <li>
+                  Inconsistent terminology: Some labels said "Register," while
+                  others said "Sign Up," with varying uppercase and lowercase
+                  styles.
+                </li>
+                <li>Lack of clear visual feedback for active input fields.</li>
+              </ul>
+              <p>
+                IMPACT: These inconsistencies confused users, making the
+                interface feel unpolished and difficult to navigate.
+              </p>
+
+              <div class="img-container">
+                <img
+                  src="img/lingoleap/clunky-ui-lements.png"
+                  alt="Inconsistent titles"
+                  class="image-projects-zoomable zoomable"
+                />
+                <span class="cap">Clunky UI Elements</span>
+              </div>
+              <div class="img-container">
+                <img
+                  src="img/lingoleap/clunky-interaction.png"
+                  alt="Clunky interaction"
+                  class="image-projects-zoomable zoomable"
+                />
+                <span class="cap">Clunky Interaction</span>
+              </div>
+
+              <p>
+                <span class="paragraph-highlight">Recap</span>
+              </p>
+              <p>
+                The sign up flow had usability issues that created friction,
+                leading to drop-offs and poor first impressions. In addressing
+                these problems, the goal was to streamline the process, reduce
+                cognitive load, and improve the user experience. Below is a
+                recap of 4 key issues.
+              </p>
+              <div class="img-container">
+                <img
+                  src="img/lingoleap/recap-of-key-usability-issues.png"
+                  alt="Recap"
+                  class="image-projects-zoomable zoomable"
+                />
+                <span class="cap">Recap of Key Usability Issues</span>
+              </div>
+            </div>
+            <div class="context-main-projects">
+              <h3 class="heading-with-line">Design Direction</h3>
+              <p>
+                To improve the sign-up flow, I explored two design directions.
+                Version A grouped phone and Google sign up under "or" to reduce
+                cognitive load for email users, while Version B retained the
+                original top tabs for phone and email sign-up, defaulting to
+                email for alignment with user preferences.
+              </p>
+              <p>
+                After evaluating user needs and stakeholder constraints, Version
+                B was selected as the final solution. It accommodated users who
+                prefer phone sign-up and minimized changes to the codebase.
+              </p>
+
+              <div class="design-note">
+                (Note: this project was redesigned to align with the new brand
+                identity and design system, ensuring everything matched and felt
+                consistent.)
+              </div>
+
+              <div class="img-container">
+                <img
+                  src="img/lingoleap/version-a-version-b.png"
+                  alt="Version A vs Version B"
+                  class="image-projects-zoomable zoomable"
+                />
+                <span class="cap">Version A vs Version B</span>
+              </div>
+            </div>
+
+            <div class="context-main-projects">
+              <h3 class="heading-with-line">
+                Refining the Flow and Layout Details
+              </h3>
+              <p>
+                Once Version B was selected, I shifted my focus to refining the
+                flow and layout to ensure the sign-up process was intuitive,
+                efficient, and aligned with the new brand guidelines. To address
+                the core issues, I implemented the following solutions:
+              </p>
+              <div class="img-container">
+                <img
+                  src="img/lingoleap/refining-the-flow and-layout details.png"
+                  alt="refining the flow and layout details"
+                  class="image-projects-zoomable zoomable"
+                />
+                <span class="cap"
+                  >Turn the Chaos Into Clarity, One Pixel at a Time</span
+                >
+              </div>
+              <p>
+                <span class="paragraph-highlight">🚏Unnecessary Detours</span>
+              </p>
+              <p>
+                First, I redesigned the landing page to make it easier for new
+                users to get started. I added two clear buttons: "Login" for
+                returning users and "Try for free now" to encourage new users.
+                This not only made the process simpler and more inviting but
+                also gave us better data on how people were using the platform.
+                I also kept the "Start free practice test" button front and
+                center to nudge new users toward signing up.
+              </p>
+              <div class="img-container">
+                <img
+                  src="img/lingoleap/new-landing-page with-updated-buttons.png"
+                  alt="Updated landing page btns"
+                  class="image-projects-zoomable zoomable"
+                />
+                <span class="cap">New Landing Page With Updated Buttons</span>
+              </div>
+
+              <p>
+                Set email as the default sign-up option since most users prefer
+                it, but kept the phone option easily accessible for those who
+                need it. This small change cut out extra steps, made things
+                faster.
+              </p>
+              <div class="img-container">
+                <iframe
+                  src="https://www.youtube.com/embed/uvE6CzJTVkg?si=qI0awWKVemLquyE2"
+                  title="YouTube video player"
+                  class="youtube-iframe"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <span class="cap">Email Sign up the Default Option</span>
+              </div>
+              <p>
+                <span class="paragraph-highlight">
+                  💬Error Messages & Feedback</span
+                >
+              </p>
+              <p>
+                For error messages and feedback, I replaced those annoying toast
+                notifications with clear, persistent messages that stayed put
+                until the issue was fixed. No more guessing what went wrong!
+              </p>
+              <div class="img-container">
+                <iframe
+                  src="https://www.youtube.com/embed/CloeCemV8Xw?si=d4pGfwRk7bQxtilL"
+                  title="YouTube video player"
+                  class="youtube-iframe"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <span class="cap">Inline Validation Message</span>
+              </div>
+
+              <p>
+                <span class="paragraph-highlight">
+                  🚧 Forgot Password Paradox</span
+                >
+              </p>
+              <p>
+                For the forgot password flow, I fixed a critical bug that
+                required users to enter their old password.
+              </p>
+              <div class="img-container">
+                <iframe
+                  src="https://www.youtube.com/embed/VtE9YPhFiRE?si=IScgT83SNjIOUm4E"
+                  title="YouTube video player"
+                  class="youtube-iframe"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <span class="cap">Fixing Account Recovery</span>
+              </div>
+              <p>
+                <span class="paragraph-highlight">
+                  🎨 Clunky UI & Inconsistencies</span
+                >
+              </p>
+              <p>
+                I standardized buttons, tabs, and labels for a consistent look
+                and feel. I improved visual feedback for input fields and
+                followed the new brand guidelines, ensuring consistent language,
+                proper interactions (focus states, hover effects), and alignment
+                with marketing messages. To make the marketing panel more
+                engaging, I highlighted key benefits with clear bullet points,
+                added real user testimonials to build trust. I also added
+                "Create Your Account" for new users and "Welcome Back" for
+                returning users to make the page switch clear and easy to
+                understand.
+              </p>
+              <div class="img-container">
+                <img
+                  src="img/lingoleap/standardizing-ui-and-interaction-effect.png"
+                  alt="Updated UI system"
+                  class="image-projects-zoomable zoomable"
+                />
+                <span class="cap">Standardizing UI & Interaction Effect</span>
+              </div>
+
+              <p>
+                <span class="paragraph-highlight">
+                  Last but Not Least, Attention to Detail</span
+                >
+              </p>
+              <p>
+                I added a support option "Need help? Contact
+                support@lingoleap.ai" for users who might get stuck. The site is
+                now responsive for all screen sizes, and for mobile users, the
+                text boxes show appropriate keyboards for entering phone
+                numbers, email addresses.
+              </p>
+              <div class="img-container">
+                <img
+                  src="img/lingoleap/support-option-is-added.png"
+                  alt="Added support email"
+                  class="image-projects-zoomable zoomable"
+                />
+                <span class="cap">Support Option is Added</span>
+              </div>
+              <div class="img-container">
+                <iframe
+                  src="https://www.youtube.com/embed/qwE_OzQKDnc?si=5Q5ACqdytlO-j1k2"
+                  title="YouTube video player"
+                  class="youtube-iframe"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <span class="cap">Fully Responsive</span>
+              </div>
+              <div class="img-container">
+                <img
+                  src="img/lingoleap/fields-show-appropriate-keyboards.png"
+                  alt="Appropriate keyboard"
+                  class="image-projects-zoomable zoomable"
+                />
+                <span class="cap">Fields Show Appropriate Keyboards</span>
+              </div>
+
+              <div class="context-main-projects">
+                <h3 class="heading-with-line">
+                  Successful Redesign and Outcomes
+                </h3>
+                <p>
+                  After finalizing the redesign, product managers reviewed it
+                  and praised its attention to detail. The updated design moved
+                  quickly into development. After the redesign rollout, we saw a
+                  64% increase in sign-up conversions. Stakeholders commented on
+                  the redesign as a success, emphasizing its positive impact on
+                  both user engagement and business goals.
+                </p>
+              </div>
+
+              <div class="context-main-projects">
+                <h3 class="heading-with-line">Project Takeaways</h3>
+                <p>
+                  This outcome underscores the value of industry best practices.
+                  Even though sign-up processes are standard, they require
+                  careful consideration of user habits and data analysis to
+                  guide design choices. Imagine offering a free sample, but the
+                  door is jammed. How likely are users to come back? For a B2C
+                  platform, attracting and onboarding new users is critical to
+                  success.. By focusing on user habits and data insights, we
+                  ensured the sign-up process was clear, intuitive, and
+                  welcoming.
+                </p>
+                <p>Key Takeaways Include:</p>
+                <ul>
+                  <li>
+                    Attention to Detail: Small improvements, like clear error
+                    messages and responsive design, significantly boost user
+                    satisfaction.
+                  </li>
+                  <li>
+                    Collaboration: Working closely with stakeholders ensured the
+                    design was and aligned with business goals.
+                  </li>
+                  <li>
+                    Data-Driven Decisions: Using analytics helped us make
+                    informed design choices.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer-container">
+        <div class="footer-content footer-content-left">
+          <a href="mailto:emmawang8989@gmail.com" class="footer-link"
+            >Emmawang8989@gmail.com</a
+          >
+          <a
+            href="https://www.linkedin.com/in/emmawangdesigner"
+            target="_blank"
+            class="footer-link"
+            >LinkedIn</a
+          >
+        </div>
+        <div class="footer-content footer-content-right">
+          <span>© 2024 by Emma Wang</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

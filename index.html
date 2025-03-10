@@ -1,182 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/landingPageImgs/favicon-Emma.svg" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
-  <link rel="icon" href="img/landingPageImgs/favicon-Emma.svg" />
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-  <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap"
-    rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/queries.css"/>
+    <script defer src="js/script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
 
-  <link rel="stylesheet" href="css/style.css?v=5" />
-  <link rel="stylesheet" href="css/queries.css?v=5" />
-  <script defer src="js/script.js"></script>
-  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-01C8PN3V99"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-01C8PN3V99"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+      gtag("config", "G-01C8PN3V99");
+    </script>
 
-    gtag('config', 'G-01C8PN3V99');
-  </script>
-
-  <title>Emma Wang - Visual & UX Designer</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header-box">
-      <a href="index.html">
-        <img class="logo" alt="emma-wang-logo" src="img/landingPageImgs/logo.svg" />
-      </a>
-      <nav class="main-nav">
-        <input type="checkbox" />
-        <img src="img/landingPageImgs/menu-outline.svg" class="button open" />
-        <img src="img/landingPageImgs/close-outline.svg" class="button close" />
-        <ul>
-          <li><a class="selected" href="index.html">Home</a></li>
-          <li><a href="other-works.html">Other Works</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
+    <title>Emma Wang - Product Designer</title>
+  </head>
+  <body>
+    <div class="custom-cursor-effect">
+      <div class="inner-dot"></div>
     </div>
-  </header>
+    <div class="container">
+      <div class="content">
+        <nav class="side-nav">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                class="logo"
+                alt="e-w-logo"
+                src="img/landingPageImgs/e:w.svg"
+              />
+            </a>
+          </div>
 
-  <div id="page">
-    <div class="h1-top-bottom-gap">
-      <span class="grey-title"> 👋 I'm Emma - Visual & UX Designer</span>
-      <h1>I believe in leading with open-mindedness and empathy to create thoughtful designs.</h1>
-      <div class="sub-paragraph">
-        <a href="#project-section" class="text-decoration-none">
-          See projects ↓
-        </a>
+        
+          <ul>
+            <li id="nav-home" class="nav-item active">
+              <a href="index.html">
+                <img
+                  src="img/landingPageImgs/home-icon.svg"
+                  alt="Home Icon"
+                />
+                <span>HOME</span>
+              </a>
+            </li>
+            <li id="nav-works" class="nav-item">
+              <a href="other-works.html">
+                <img
+                  src="img/landingPageImgs/works-icon.svg"
+                  alt="Works Icon"
+                />
+                <span>OTHER WORKS</span>
+              </a>
+            </li>
+            <li id="nav-about" class="nav-item">
+              <a href="about.html">
+                <img
+                  src="img/landingPageImgs/about-icon.svg"
+                  alt="About Icon"
+                  
+                />
+                <span>ABOUT</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+  <!-- Hamburger menu -->
+  <div class="hamburger-menu" id="hamburger-menu">
+    <div class="logo">
+      <a href="index.html">
+        <img class="logo" alt="e-w-logo" src="img/landingPageImgs/e:w.svg" />
+      </a>
+    </div>
+    <div class="circle-background">
+      <div class="hamburger-icon" id="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-  
-
-    <section id="project-section">
-      <!-- Project Rebound -->
-      <section class="section-box">
-        <a href="project-rebound.html?v=1" class="hover-link">
-          <div class="margin-bottom-gap-128 grid grid--2-cols">
-            <div>
-              <h2>Project Rebound</h2>
-              <span class="heading-secondary-subheading">Web App ｜ 2023</span>
-              <p class="hover-link">Project Rebound is a program that assists formerly incarcerated individuals in succeeding in higher education at California State Universities. </p>
-            </div>
-
-            <div class="showCase-Img-box">
-              <img src="img/landingPageImgs/2x-ProjectReboundHome.jpg" class="showCase-img img-hover"
-                alt="project rebound mockup" />
-            </div>
-          </div>
-        </a>
-      </section>
-
-      <!-- NearBers -->
-      <section class="section-box">
-        <a href="nearbers.html?v=1" class="hover-link">
-          <div class="margin-bottom-gap-128 grid grid--2-cols">
-            <div>
-              <h2>NearBers</h2>
-              <span class="heading-secondary-subheading">Mobile App ｜ 2019</span>
-              <p class="hover-link">NearBers is a social networking app designed specifically for connecting
-                people with their
-                neighbors in the
-                same building to create a supportive community. </p>
-            </div>
-
-            <div class="showCase-Img-box">
-              <img src="img/landingPageImgs/2x-NearBers.jpg" class="showCase-img img-hover" alt="nearbers mockup" />
-            </div>
-          </div>
-        </a>
-      </section>
-
-
-      <!-- Pattern Awareness -->
-      <section class="section-box">
-        <a href="pattern-awareness.html?v=1" class="hover-link">
-          <div class="margin-bottom-gap-128 grid grid--2-cols">
-            <div>
-              <h2>Pattern Awareness</h2>
-              <span class="heading-secondary-subheading">WebSite ｜ 2023</span>
-              <p class="hover-link">Pattern Awareness is my capstone project. It's a website dedicated to raising
-                awareness among people, especially design students, about the use of deceptive patterns in digital
-                products.
-              </p>
-            </div>
-
-            <div class="showCase-Img-box gifBox">
-              <img src="img/landingPageImgs/patternAwareness.gif" class="showCase-img img-hover"
-                alt="pattern awareness mockup" />
-            </div>
-          </div>
-        </a>
-      </section>
-
-      <!-- <section>
-        <section class="section-box">
-          <a href="index.html" class="hover-link no-cursor">
-            <div class="grid grid--2-cols">
-              <div>
-                <h2>Applin</h2>
-                <span class="heading-secondary-subheading">Responsive Web ｜ 2023</span>
-                <p class="hover-link">Designing a responsive website for Applin™ that aims to highlight its innovative
-                  features and benefits. </p>
-                <p class="grey-title">
-                  Coming Soon
-                </p>
-              </div>
-
-              <div class="showCase-Img-box">
-                <img src="img/landingPageImgs/2x-appline.jpg" class="showCase-img img-hover"
-                  alt="project rebound mockup" />
-              </div>
-            </div>
-          </a>
-        </section> -->
-
-        <!-- Footer -->
-        <footer class="footer">
-          <div class="grid--3-cols-footer">
-            <div>
-              <p class="footer-title">
-                Thanks for stopping by 💗 </p>
-              <p class="footer-sub">
-                Copyright &copy; <span class="year">2030</span> by Emma Wang
-              </p>
-            </div>
-
-            <div>
-              <p class="footer-title">
-                Get in touch 📧 </p>
-              <a class="footer-link footer-sub" href="mailto:Emmawang8989@gmail.com">Emmawang8989@gmail.com</a>
-            </div>
-
-            <div>
-              <p class="footer-title">
-                Stay connected 👋 </p>
-              <a class="footer-link footer-sub" href="https://www.linkedin.com/in/emmawangdesigner"
-                target="_blank">LinkedIn</a>
-            </div>
-          </div>
-        </footer>
-
+    <ul class="hamburger-nav-items" id="hamburger-nav-items">
+      <li class="close-button-container">
+        <button class="close-button" id="close-button">Close</button>
+      </li>
+      <li id="nav-home-ham" class="nav-item">
+        <a href="index.html">HOME</a>
+      </li>
+      <li id="nav-works-ham" class="nav-item active">
+        <a href="other-works.html">OTHER WORKS</a>
+      </li>
+      <li id="nav-about-ham" class="nav-item">
+        <a href="about.html">ABOUT</a>
+      </li>
+    </ul>
   </div>
-</body>
+  
+  
+        <!-- Main Content -->
+        <main >
+          <!-- Hero Section -->
+          <div class="hero">
+            <div class="hero-text-container-left">
+              <p>
+                I turn concepts into digital experiences, with a keen focus on addressing users<span class="arrow symbols" >'</span> needs.
+              </p>
+            </div>
+            <div class="hero-text-container-right">
+              <h2>Hi！你好</h2>
+              <h1>Emma Wang.</h1>
+              <h2>Product Designer</h2>
+              <h2>Visual Designer</h2>
+              <h2>Plant Mom</h2>
+              <h2>MHCID</h2>
+            </div>
+            <div class="btn-center-container">
+              <a href="#projects" class="btn-see-projects">
+                <span class="text">SCROLL DOWN</span>
+                <span class="circle">
+                  <span class="arrow symbols" >↓</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- Projects Section -->
+          <!-- Lingoleap -->
+        
+          </svg>
+          <div class="projects" id="projects">
+            <div class="bookiea-wrapper">
+              <div class="lingoleap grid--2-cols pull-feeling">
+                <div class="text-container-project">
+                  <h2>LingoLeap - Web App</h2>
+                  <p>
+                    Optimized LingoLeap’s sign up flow
+                  </p>
+                  <a href="lingoleap.html" class="btn-learn-more">Learn More ↗</a>
+                </div>
+                <img
+                  src="img/landingPageImgs/lingoleap-showcase.png"
+                  alt="LingoLeap Showcase"
+                  class="image-project"
+                />
+              </div>
+              <div class="custom-cursor">
+                <div class="custom-cursor-icon">
+                  <img
+                    src="img/landingPageImgs/link.svg"
+                    alt="Link Icon"
+                    class="link-icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Joblin -->
+            <div class="joblin-wrapper">
+              <div class="joblin grid--2-cols pull-feeling">
+                <img
+                  src="img/landingPageImgs/joblin-showcase.jpg"
+                  alt="Joblin Showcase"
+                  class="image-project image-project-joblin"
+                />
+                <div class="text-container-project">
+                  <h2>Joblin - Web App (Coming Soon)</h2>
+                  <p>
+                    Creating a task process to make communication easier during
+                    job searching
+                  </p>
+                  <a href="https://joblin.app" target="_blank" class="btn-learn-more">Visit Website ↗</a>
+                </div>
+              </div>
+              <div class="custom-cursor">
+                <div class="custom-cursor-icon">
+                  <img
+                    src="img/landingPageImgs/link.svg"
+                    alt="Link Icon"
+                    class="link-icon"
+                  />
+                </div>
+              </div>
+              <div class="custom-cursor">
+                <div class="custom-cursor-icon">
+                  <img
+                    src="img/landingPageImgs/link.svg"
+                    alt="Link Icon"
+                    class="link-icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- bookiea -->
+            <div class="bookiea">
+              <div class="bookiea-wrapper">
+                <div class="bookiea grid--2-cols pull-feeling">
+                  <div class="text-container-project">
+                    <h2>Bookiea - Web App (Coming Soon)</h2>
+                    <p>
+                      Designing end-to-end features and initiating early product concepts
+                    </p>
+                    <a href="https://bookiea.com" target="_blank" class="btn-learn-more">Visit Website ↗</a>
+                  </div>
+                  <img
+                    src="img/landingPageImgs/bookiea-showcase.jpg"
+                    alt="Bookiea Showcase"
+                    class="image-project"
+                  />
+                </div>
+                <div class="custom-cursor">
+                  <div class="custom-cursor-icon">
+                    <img
+                      src="img/landingPageImgs/link.svg"
+                      alt="Link Icon"
+                      class="link-icon"
+                    />
+                  </div>
+                </div>
+            </div>
+            <div class="custom-cursor">
+              <div class="custom-cursor-icon">
+                <img
+                  src="img/landingPageImgs/link.svg"
+                  alt="Link Icon"
+                  class="link-icon"
+                />
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer-container">
+        <div class="footer-content footer-content-left">
+          <a href="mailto:emmawang8989@gmail.com" class="footer-link">Emmawang8989@gmail.com</a>
+          <a href="https://www.linkedin.com/in/emmawangdesigner" target="_blank" class="footer-link">LinkedIn</a>
+        </div>
+        <div class="footer-content footer-content-right">
+          <span>© 2024 by Emma Wang</span>
+        </div>
+      </footer>
 
+    </div>
+
+  </body>
 </html>
