@@ -51,6 +51,12 @@ html {
   transform: translate(-50%, -50%) scale(1.2);
 }
 
+@media (max-width: 48rem) {
+  .custom-cursor-effect {
+    display: none !important;
+  }
+}
+
 h1 {
   font-family: "Libre Baskerville", serif;
   color: #f7f7f7;
@@ -357,14 +363,12 @@ ul {
   font-size: 2rem;
   line-height: 150%;
   padding-top: 12rem;
-  user-select: none;
 }
 
 .hero-text-container-right h1 {
   font-size: calc(1.2rem + 6vw);
   font-weight: 700;
   padding-top: 2rem;
-  user-select: none;
 }
 
 .hero-text-container-right h2 {
@@ -373,7 +377,6 @@ ul {
   font-size: calc(1rem + 3vw);
   font-weight: 700;
   padding-top: 2rem;
-  user-select: none;
 }
 
 .hero-text-container-left,
@@ -774,11 +777,11 @@ ul {
   transition: transform 1s ease-in-out;
 }
 
-.bookiea-wrapper:hover .image-project {
+.lingoleap-wrapper:hover .image-project {
   transform: scale(1.05);
 }
 @media (max-width: 160rem) {
-  .bookiea-wrapper {
+  .lingoleap-wrapper {
     background: #000;
     width: 100%;
     height: 90vh;
@@ -791,7 +794,7 @@ ul {
   }
 }
 @media (max-width: 130rem) {
-  .bookiea-wrapper {
+  .lingoleap-wrapper {
     background: #000;
     width: 100%;
     height: 70vh;
@@ -809,7 +812,7 @@ ul {
     grid-template-columns: 1fr;
   }
 
-  .bookiea-wrapper {
+  .lingoleap-wrapper {
     background: #000;
     width: 100%;
     height: 80vh;
@@ -926,7 +929,7 @@ ul {
   transform: scale(1.05);
 }
 
-/**** LITTLE LEAF DAYCARE ****/
+/**** BOOKIEA ****/
 .bookiea-wrapper {
   background: #000;
   width: 100%;
